@@ -70,49 +70,73 @@ window.SITE_CONTENT = {
 		{
 			open: true,
 			icon: "uil-brackets-curly",
-			title: "Backend & Java",
-			subtitle: "Language, framework, and service style",
+			title: "Backend & Distributed Systems",
+			subtitle: "Core backend engineering and service architecture",
 			skills: [
 				{ name: "Java", percent: 90 },
 				{ name: "Spring Boot", percent: 90 },
-				{ name: "Hibernate", percent: 80 },
-				{ name: "Microservices & REST", percent: 90 }
+				{ name: "Microservices Architecture", percent: 95 },
+				{ name: "REST API Design", percent: 90 }
 			]
 		},
 		{
 			open: false,
 			icon: "uil-cloud",
-			title: "Cloud, data & events",
-			subtitle: "AWS, containers, streaming, storage",
+			title: "Cloud, DevOps & Observability",
+			subtitle: "Infrastructure, deployment, and monitoring",
 			skills: [
-				{ name: "AWS (EC2, Lambda, S3, SQS, …)", percent: 85 },
-				{ name: "Apache Kafka", percent: 80 },
+				{ name: "AWS (Lambda, S3, DynamoDB, EC2)", percent: 85 },
 				{ name: "Docker & Kubernetes", percent: 80 },
-				{ name: "SQL & NoSQL (PG, MySQL, Oracle, DynamoDB)", percent: 85 }
+				{ name: "CI/CD (Jenkins, Argo CD)", percent: 85 },
+				{ name: "CloudWatch, Splunk, Grafana", percent: 85 }
 			]
 		},
 		{
 			open: false,
-			icon: "uil-rocket",
-			title: "Delivery & quality",
-			subtitle: "Design, shipping, and teamwork",
+			icon: "uil-exchange",
+			title: "Event-Driven Architecture",
+			subtitle: "Asynchronous systems and messaging patterns",
 			skills: [
-				{ name: "System design", percent: 80 },
-				{ name: "CI/CD (Jenkins, Argo CD)", percent: 80 },
-				{ name: "Agile & Scrum", percent: 85 },
-				{ name: "Git, Jira & code review", percent: 82 }
+				{ name: "Apache Kafka", percent: 80 },
+				{ name: "AWS SQS & SNS", percent: 85 },
+				{ name: "Async Workflows & Pub-Sub", percent: 90 },
+				{ name: "Retry, DLQ & Idempotency", percent: 80 }
 			]
 		},
 		{
 			open: false,
-			icon: "uil-analytics",
-			title: "Monitoring & observability",
-			subtitle: "Logs, metrics, and tracing",
+			icon: "uil-database",
+			title: "Data & Storage",
+			subtitle: "Database design and data modeling",
 			skills: [
-				{ name: "Splunk", percent: 80 },
-				{ name: "Amazon CloudWatch", percent: 80 },
-				{ name: "ELK stack", percent: 78 },
-				{ name: "Grafana", percent: 75 }
+				{ name: "PostgreSQL, MySQL, Oracle", percent: 85 },
+				{ name: "DynamoDB", percent: 85 },
+				{ name: "JPA / Hibernate", percent: 90 },
+				{ name: "Redis", percent: 80 }
+			]
+		},
+		{
+			open: false,
+			icon: "uil-robot",
+			title: "AI-Assisted Development",
+			subtitle: "LLM-driven workflows and productivity engineering",
+			skills: [
+				{ name: "Claude Skills Development", percent: 95 },
+				{ name: "Claude API Workflows", percent: 80 },
+				{ name: "Model Context Protocol (MCP)", percent: 75 },
+				{ name: "Cursor (AI-assisted coding)", percent: 90 }
+			]
+		},
+		{
+			open: false,
+			icon: "uil-window",
+			title: "Frontend (Basic)",
+			subtitle: "UI development and integration",
+			skills: [
+				{ name: "HTML", percent: 85 },
+				{ name: "JavaScript", percent: 75 },
+				{ name: "CSS", percent: 75 },
+				{ name: "React.js", percent: 65 }
 			]
 		}
 	],
@@ -139,7 +163,7 @@ window.SITE_CONTENT = {
 	},
 	projects: {
 		sectionTitle: "Projects",
-		sectionSubtitle: "What I have delivered in product teams — open a card for details",
+		sectionSubtitle: "Production systems and platforms I’ve designed and built",
 		viewMore: "View more",
 		items: [
 			{
@@ -147,29 +171,35 @@ window.SITE_CONTENT = {
 				titleHtml: "One Intuit Notification Platform (OINP)",
 				modalTitle: "Intuit — One Intuit Notification Platform",
 				lines: [
-					"Notification and messaging capabilities for Intuit&rsquo;s ecosystem: design and build of Java and Spring Boot services on AWS (Lambda, EC2, SQS, SNS, DynamoDB, S3) with a strong focus on scale and reliability.",
-					"Event-driven processing with Apache Kafka, PostgreSQL data paths, and operational visibility with CloudWatch, Splunk, and Kubernetes, including Argo CD and container-based delivery.",
-					"End-to-end ownership: implementation, design collaboration, code review, and production support in the notification domain."
+					"Designed and built a scalable, multi-channel notification platform (Email, SMS, Push, Voice, Tray) using Java and Spring Boot, handling high-throughput event-driven workloads.",
+					"Implemented asynchronous workflows using Apache Kafka and AWS SQS/SNS, enabling reliable message delivery with retry handling, fan-out patterns, and fault tolerance.",
+					"Architected cloud-native services on AWS (Lambda, EC2, DynamoDB, S3) with strong observability using CloudWatch and Splunk, and deployed via Docker, Kubernetes, and Argo CD.",
+					"Contributed to system design, API contracts, and production reliability, ensuring high availability and performance at scale.",
+					"<strong>Tech Stack: Java, Spring Boot, Kafka, AWS (SQS, SNS, Lambda, DynamoDB, S3), PostgreSQL, Docker, Kubernetes, Splunk, CloudWatch</strong>"
 				]
 			},
 			{
 				icon: "uil-clipboard-alt",
-				titleHtml: "Bedrock - Reference Data Management",
-				modalTitle: "Oracle Cerner - Bedrock",
+				titleHtml: "Bedrock - Healthcare Platform (Oracle Cerner)",
+				modalTitle: "Oracle Cerner — Bedrock Platform",
 				lines: [
-					"Long-running work in Oracle&rsquo;s health line (including Cerner): Java services, <strong>CCL</strong> in the clinical and operations stack, and microservices on <strong>AWS</strong> with Oracle SQL, EC2, and CloudWatch.",
-					"Release and operations: <strong>Jenkins</strong> pipelines, on-call and incident response with <strong>Splunk</strong>, and close collaboration in Agile and Scrum with clinical and product stakeholders.",
-					"Progression across multiple roles (Software Engineer through Software Developer 2) on overlapping product releases, with a focus on correctness, performance, and safe upgrades in a regulated space."
+					"Developed core backend services for healthcare reference data management using Java, Spring Boot, and Oracle SQL in a highly regulated environment.",
+					"Optimized system performance through query tuning and service refactoring, improving response times and reliability of critical healthcare workflows.",
+					"Built and maintained microservices on AWS (EC2, Lambda, DynamoDB) with CI/CD pipelines using Jenkins and monitoring via Splunk and CloudWatch.",
+					"Collaborated on system design and production support, ensuring stability, correctness, and safe deployments across releases.",
+					"<strong>Tech Stack: Java, Spring Boot, Oracle SQL, AWS (EC2, Lambda, DynamoDB), Jenkins, Splunk, CloudWatch</strong>"
 				]
 			},
 			{
 				icon: "uil-building",
-				titleHtml: "TrackChild 3.0 (MeitY) — e‑government",
-				modalTitle: "TrackChild 3.0 - National Informatics Centre",
+				titleHtml: "TrackChild 3.0 (Government of India)",
+				modalTitle: "TrackChild 3.0 — National Informatics Centre (NIC)",
 				lines: [
-					"<strong>Java</strong> and <strong>Spring Boot</strong> microservices with <strong>PostgreSQL</strong> for public-sector systems with the National Informatics Centre, including requirements and sign-off cycles typical of government programs.",
-					"APIs and back-office flows for citizen-facing and administrative use cases, with an emphasis on stability and clear handover documentation for operations.",
-					"NIC (Feb 2019 &ndash; Nov 2019), Kolkata; preceded by junior-level work at Icode Solution (Jan 2018 &ndash; Jan 2019) in a similar market."
+					"Led backend development and system migration for a government-scale application using Java, Spring Boot, and PostgreSQL.",
+					"Designed REST APIs and optimized database queries, significantly improving system performance and response times.",
+					"Built containerized services using Docker and Kubernetes with CI/CD pipelines, ensuring scalable and maintainable deployments.",
+					"Delivered stable and reliable backend workflows for citizen-facing and administrative use cases in a public-sector environment.",
+					"<strong>Tech Stack: Java, Spring Boot, PostgreSQL, HTML, JavaScript, CSS, BootStrap, Docker, Jenkins</strong>"
 				]
 			}
 		]
