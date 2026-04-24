@@ -214,13 +214,13 @@ window.SITE_CONTENT = {
 				title: "Cloud Trails",
 				description: "Nextcloud on Docker, Linux, RAID, and rsync — a private, self-managed cloud in the Trails lab.",
 				projectButton: "Open",
-				linkUrl: "https://cloud.trails.click"
+				linkUrl: "https://trails.click"
 			},
 			{
 				image: "./assets/images/projects2.jpg",
 				imageAlt: "CAS PDF parser",
 				title: "CAS PDF parser",
-				description: "Spring Boot: parse account statements, extract transactions, group by fund, and compute returns.",
+				description: "Spring Boot: send Consolidated Account Statement (CAS) to an email, parse statements, extract transactions, group by fund, and compute returns.",
 				projectButton: "GitHub",
 				linkUrl: "https://github.com/me-soumen"
 			},
@@ -250,12 +250,6 @@ window.SITE_CONTENT = {
 				what: "Excellence — Claude Code, skills, faster delivery",
 				where: "Intuit",
 				details: "Recognized for excellence by a Senior Staff Software Engineer and a Senior Manager for championing adoption of Claude Code and for building a comprehensive set of reusable Claude skills. That helped us land the work in about 1 week versus a 4-week estimate—without trading away review depth or quality."
-			},
-			{
-				icon: "uil-user-check",
-				what: "Full-time offer after long-term contract",
-				where: "Intuit",
-				details: "Started on the client side through a vendor as a contractor. After a 2-year engagement, Intuit extended a full-time offer based on delivery quality and how I worked with the team in production."
 			},
 			{
 				icon: "uil-briefcase-alt",
