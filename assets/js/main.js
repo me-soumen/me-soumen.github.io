@@ -70,8 +70,17 @@ const smProjectModals = document.querySelectorAll(".sm-projects-modal"),
     smProjectModalBtns = document.querySelectorAll(".sm-projects-view"),
     smProjectModalCloses = document.querySelectorAll(".sm-projects-modal-close");
 
+function smCloseAllProjectModals() {
+    smProjectModals.forEach((modalView) => {
+        modalView.classList.remove("active-modal");
+    });
+    document.body.classList.remove("sm-modal-open");
+}
+
 let smOpenProjectModal = function (modalClick) {
+    smCloseAllProjectModals();
     smProjectModals[modalClick].classList.add("active-modal");
+    document.body.classList.add("sm-modal-open");
 };
 
 smProjectModalBtns.forEach((modalBtn, i) => {
@@ -82,16 +91,14 @@ smProjectModalBtns.forEach((modalBtn, i) => {
 
 smProjectModalCloses.forEach((modalClose) => {
     modalClose.addEventListener("click", () => {
-        smProjectModals.forEach((modalView) => {
-            modalView.classList.remove("active-modal");
-        });
+        smCloseAllProjectModals();
     });
 });
 
 smProjectModals.forEach((modalView) => {
     modalView.addEventListener("click", (e) => {
         if (e.target === modalView) {
-            modalView.classList.remove("active-modal");
+            smCloseAllProjectModals();
         }
     });
 });

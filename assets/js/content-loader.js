@@ -603,6 +603,12 @@
       aL.textContent = K.linkedinText != null && K.linkedinText !== "" ? K.linkedinText : (K.linkedin || "LinkedIn");
       aL.setAttribute("href", K.linkedin);
     }
+    if (cRows[5]) {
+      cRows[5].querySelector(".sm-contact-title").textContent =
+        K.locationLabel != null && K.locationLabel !== "" ? K.locationLabel : "Location";
+      var loc = cRows[5].querySelector(".sm-contact-subtitle");
+      if (loc) loc.textContent = K.location != null && K.location !== "" ? K.location : "";
+    }
 
     var formP = document.querySelector(".sm-contact-form .sm-about-description");
     if (formP) formP.textContent = K.formNote;
