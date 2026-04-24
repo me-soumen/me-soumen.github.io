@@ -11,6 +11,10 @@ Static site on **GitHub Pages**; Poppins + self-hosted Unicons, green theme, lig
 
 This work is **All Rights Reserved**. The design, code, copy, and assets in this repository are proprietary and may not be copied, reused, modified, or redistributed without prior written permission.
 
+### Third-party rights notice
+
+This repository may include ideas, patterns, or components inspired by publicly shared resources. Any third-party trademarks, assets, or code rights remain with their respective owners. If you are a rights holder and have a concern, please open an issue or contact the repository owner for prompt review.
+
 ## Edit content
 
 Primary source: [`assets/data/site-content.js`](./assets/data/site-content.js) (`window.SITE_CONTENT`). [`assets/js/content-loader.js`](./assets/js/content-loader.js) injects it into the DOM. After deploy, the root `<html>` should show `data-site-content="applied"`. `index.html` holds static fallbacks if scripts fail.
