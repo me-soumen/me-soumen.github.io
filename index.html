@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Soumen Mukherjee — software engineer (Java, Spring Boot, microservices, AWS, Kafka). Experience at Intuit, Oracle (Cerner), NIC, and more. Portfolio and contact.">
+    <meta name="theme-color" content="#e8f2ed">
+    <!-- Cache bust: after each deploy, replace ?v=4 with ?v=5 (etc.) in this file so all assets fetch fresh copies -->
+    <link rel="icon" href="./assets/images/favicon.png?v=4" type="image/png">
+
+    <!-- Self-hosted fonts (avoids OTS/decode errors when IDE preview proxies break CDN font URLs) -->
+    <link rel="stylesheet" href="./assets/fonts/poppins.css?v=4">
+    <link rel="stylesheet" href="./assets/fonts/unicons-line.css?v=4">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css?v=4">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css?v=9">
+    <link rel="stylesheet" href="./assets/css/responsive.css?v=10">
+
+    <title>Soumen Mukherjee | Software Engineer | Portfolio</title>
+</head>
+
+<body>
+    <!-- Main copy from site-content.js (content-loader.js). <html data-site-content> when applied. -->
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./" class="sm-nav-logo">Soumen Mukherjee</a>
+            <div class="sm-nav-menu" id="nav-menu">
+                <ul class="sm-nav-list grid">
+                    <li class="sm-nav-item">
+                        <a href="#intro" class="sm-nav-link is-current">
+                            <i class="uil uil-estate sm-nav-icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="sm-nav-item">
+                        <a href="#profile" class="sm-nav-link">
+                            <i class="uil uil-user sm-nav-icon"></i> About
+                        </a>
+                    </li>
+                    <li class="sm-nav-item">
+                        <a href="#tech-stack" class="sm-nav-link">
+                            <i class="uil uil-file-alt sm-nav-icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="sm-nav-item">
+                        <a href="#journey" class="sm-nav-link">
+                            <i class="uil uil-graduation-cap sm-nav-icon"></i> Qualification
+                        </a>
+                    </li>
+                    <li class="sm-nav-item">
+                        <a href="#work" class="sm-nav-link">
+                            <i class="uil uil-briefcase-alt sm-nav-icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="sm-nav-item">
+                        <a href="#achievements" class="sm-nav-link">
+                            <i class="uil uil-star sm-nav-icon"></i> Highlights
+                        </a>
+                    </li>
+                    <li class="sm-nav-item">
+                        <a href="#contact" class="sm-nav-link">
+                            <i class="uil uil-message sm-nav-icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times sm-nav-close" id="nav-close"></i>
+            </div>
+            <div class="sm-nav-btns">
+
+                <!-- theme change button  -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="sm-nav-toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="sm-intro section" id="intro">
+            <div class="sm-hero-wrap container grid">
+                <div class="sm-home-content grid">
+                    <div class="sm-home-social">
+                        <a href="https://www.linkedin.com/in/mukherjee-soumen" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+                            class="sm-home-social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/me-soumen" aria-label="GitHub" target="_blank" rel="noopener noreferrer"
+                            class="sm-home-social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://trails.click" aria-label="trails.click" target="_blank" rel="noopener noreferrer" class="sm-home-social-icon">
+                            <i class="uil uil-globe"></i>
+                        </a>
+                        <a href="mailto:me.soumen02@gmail.com" aria-label="Email" class="sm-home-social-icon">
+                            <i class="uil uil-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="sm-home-img">
+                        <svg class="sm-home-blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="sm-home-blob-img" href="./assets/images/self.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="sm-home-data">
+                        <h1 class="sm-home-title">Hi, I&rsquo;m Soumen</h1>
+                        <h3 class="sm-home-subtitle">Backend Engineer building scalable systems &amp; self-hosted platforms</h3>
+                        <div class="sm-home-intro">
+                            <p class="sm-home-description">I love to design and build production-grade backend systems using Java, Spring Boot, AWS etc &mdash; and build &ldquo;Trails&rdquo;, a personal ecosystem for cloud storage, finance tracking, and digital life management and so on.</p>
+                            <p class="sm-home-tagline" role="note">Love to design systems that scale. Even if only 3 users show up.</p>
+                        </div>
+                        <a href="#profile" class="button button--flex">
+                            Explore<i class="uil uil-rocket sm-button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="sm-home-scroll">
+                    <a href="#profile" class="sm-home-scroll-button button--flex">
+                        <i class="uil uil-mouse-alt sm-home-scroll-mouse"></i>
+                        <span class="sm-home-scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="sm-profile section" id="profile">
+            <h2 class="sm-section-title">About me</h2>
+            <span class="sm-section-subtitle">A short introduction</span>
+            <div class="sm-about-container container grid">
+                <img src="./assets/images/about.png" alt="About Soumen" class="sm-about-img">
+                <div class="sm-about-data">
+                    <p class="sm-about-description">
+                        Software engineer with <strong>over seven years</strong> of experience in <strong>Java</strong> and <strong>Spring Boot</strong>, shipping APIs, data-heavy services, and distributed systems in product teams. I work across the stack with <strong>REST</strong> and <strong>event-driven</strong> design (<strong>Kafka</strong>); databases such as <strong>PostgreSQL</strong>, <strong>Oracle</strong>, <strong>MySQL</strong>, and <strong>DynamoDB</strong>; and cloud and delivery on <strong>AWS</strong> with <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>CI/CD</strong>. I care about clear design, safe releases, and how systems behave in production. Outside of work, I run self-hosted infra (Nextcloud, Money Trails, Soil Trails, NAS, etc.) in the <strong>Trails Labs</strong> ecosystem.
+                    </p>
+                    <div class="sm-about-info">
+                        <div>
+                            <span class="sm-about-info-title">7+</span>
+                            <span class="sm-about-info-name">Years of experience</span>
+                        </div>
+                        <div>
+                            <span class="sm-about-info-title">6</span>
+                            <span class="sm-about-info-name">Companies</span>
+                        </div>
+                        <div>
+                            <span class="sm-about-info-title">4+</span>
+                            <span class="sm-about-info-name">Side projects</span>
+                        </div>
+                    </div>
+                    <div class="sm-about-buttons">
+                        <a href="./assets/files/Resume_Soumen_Mukherjee.pdf" download="Resume_Soumen_Mukherjee_Backend_Engineer.pdf" class="button button--flex">
+                            Download resume<i class="uil uil-download-alt sm-button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="sm-techstack section" id="tech-stack">
+            <h2 class="sm-section-title">Technology stack</h2>
+            <span class="sm-section-subtitle">My technical skills</span>
+            <div class="sm-techstack-container container grid">
+                <div class="sm-techstack-content is-open">
+                    <div class="sm-techstack-header">
+                        <i class="uil uil-brackets-curly sm-techstack-icon"></i>
+                        <div>
+                            <h1 class="sm-techstack-title">Backend &amp; Java</h1>
+                            <span class="sm-techstack-subtitle">Language, framework, and service style</span>
+                        </div>
+                        <i class="uil uil-angle-down sm-techstack-arrow"></i>
+                    </div>
+                    <div class="sm-techstack-list grid">
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Java</h3>
+                                <span class="sm-techstack-number">90%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 90%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Spring Boot</h3>
+                                <span class="sm-techstack-number">90%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 90%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Hibernate</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Microservices &amp; REST</h3>
+                                <span class="sm-techstack-number">90%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 90%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-techstack-content is-hidden">
+                    <div class="sm-techstack-header">
+                        <i class="uil uil-cloud sm-techstack-icon"></i>
+                        <div>
+                            <h1 class="sm-techstack-title">Cloud, data &amp; events</h1>
+                            <span class="sm-techstack-subtitle">AWS, containers, streaming, storage</span>
+                        </div>
+                        <i class="uil uil-angle-down sm-techstack-arrow"></i>
+                    </div>
+                    <div class="sm-techstack-list grid">
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">AWS (EC2, Lambda, S3, SQS, &hellip;)</h3>
+                                <span class="sm-techstack-number">85%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Apache Kafka</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Docker &amp; Kubernetes</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">SQL &amp; NoSQL (PG, MySQL, Oracle, DynamoDB)</h3>
+                                <span class="sm-techstack-number">85%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-techstack-content is-hidden">
+                    <div class="sm-techstack-header">
+                        <i class="uil uil-rocket sm-techstack-icon"></i>
+                        <div>
+                            <h1 class="sm-techstack-title">Delivery &amp; quality</h1>
+                            <span class="sm-techstack-subtitle">Design, shipping, and teamwork</span>
+                        </div>
+                        <i class="uil uil-angle-down sm-techstack-arrow"></i>
+                    </div>
+                    <div class="sm-techstack-list grid">
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">System design</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">CI/CD (Jenkins, Argo CD)</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Agile &amp; Scrum</h3>
+                                <span class="sm-techstack-number">85%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 85%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Git, Jira &amp; code review</h3>
+                                <span class="sm-techstack-number">82%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 82%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-techstack-content is-hidden">
+                    <div class="sm-techstack-header">
+                        <i class="uil uil-analytics sm-techstack-icon"></i>
+                        <div>
+                            <h1 class="sm-techstack-title">Monitoring &amp; observability</h1>
+                            <span class="sm-techstack-subtitle">Logs, metrics, and tracing</span>
+                        </div>
+                        <i class="uil uil-angle-down sm-techstack-arrow"></i>
+                    </div>
+                    <div class="sm-techstack-list grid">
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Splunk</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Amazon CloudWatch</h3>
+                                <span class="sm-techstack-number">80%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 80%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">ELK stack</h3>
+                                <span class="sm-techstack-number">78%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 78%"></span>
+                            </div>
+                        </div>
+                        <div class="sm-techstack-data">
+                            <div class="sm-techstack-titles">
+                                <h3 class="sm-techstack-name">Grafana</h3>
+                                <span class="sm-techstack-number">75%</span>
+                            </div>
+                            <div class="sm-techstack-bar">
+                                <span class="sm-techstack-percentage" style="width: 75%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="sm-journey section" id="journey">
+            <h2 class="sm-section-title">Qualification</h2>
+            <span class="sm-section-subtitle">Experience and education</span>
+
+            <div class="sm-qualification-container container">
+                <div class="sm-qualification-tabs">
+                    <div class="sm-journey-tab button--flex is-active" data-target="#journey-work">
+                        <i class="uil uil-briefcase-alt sm-qualification-icon"></i>
+                        Experience
+                    </div>
+                    <div class="sm-journey-tab button--flex" data-target="#journey-education">
+                        <i class="uil uil-graduation-cap sm-qualification-icon"></i>
+                        Education
+                    </div>
+                </div>
+
+                <div class="sm-qualification-sections">
+                    <div class="sm-journey-panel" data-content id="journey-education">
+                        <div class="sm-qualification-data">
+                            <div>
+                                <h3 class="sm-qualification-title">Master of Computer Applications (MCA)</h3>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-graduation-cap sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Heritage Institute of Technology</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-map-marker sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Kolkata, India</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-calendar-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">2015 &ndash; 2018</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="sm-qualification-rounder"></span>
+                                <span class="sm-qualification-line"></span>
+                            </div>
+                        </div>
+                        <div class="sm-qualification-data">
+                            <div></div>
+                            <div>
+                                <span class="sm-qualification-rounder"></span>
+                            </div>
+                            <div>
+                                <h3 class="sm-qualification-title">B.Sc. Computer Science</h3>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-graduation-cap sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">The University of Burdwan</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-map-marker sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Durgapur, India</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-calendar-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">2011 &ndash; 2014</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-qualification-sections">
+                    <div class="sm-journey-panel is-active" data-content id="journey-work">
+                        <div class="sm-qualification-data">
+                            <div>
+                                <h3 class="sm-qualification-title">Lead Software Engineer</h3>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-briefcase-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Dexian India Technologies Pvt. Ltd.</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-link sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Client: Intuit</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-map-marker sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Bengaluru, India</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-calendar-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">17/04/2024 &ndash; 22/04/2026</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-layers-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Java, Spring Boot, AWS, Kafka, Microservices, Lambda, EC2, SQS, SNS, DynamoDB, S3, CloudWatch, PostgreSQL, Docker, Kubernetes, Argo CD, Splunk</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="sm-qualification-rounder"></span>
+                                <span class="sm-qualification-line"></span>
+                            </div>
+                        </div>
+                        <div class="sm-qualification-data">
+                            <div></div>
+                            <div>
+                                <span class="sm-qualification-rounder"></span>
+                            </div>
+                            <div>
+                                <h3 class="sm-qualification-title">Software Developer II</h3>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-briefcase-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Oracle Cerner Healthcare Solutions India Pvt. Ltd.</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-map-marker sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Bengaluru, India</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-calendar-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">22/06/2020 &ndash; 12/04/2024</span>
+                                </div>
+                                <div class="sm-qualification-meta">
+                                    <i class="uil uil-layers-alt sm-qualification-meta-icon"></i>
+                                    <span class="sm-qualification-meta-text">Java, CCL, AWS, Spring Boot, Microservices, Oracle SQL, EC2, Cloudwatch, Jenkins, Splunk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== PROJECTS (focus / modals) ====================-->
+        <section class="sm-work section" id="work">
+            <h2 class="sm-section-title">Projects</h2>
+            <span class="sm-section-subtitle">What I have delivered in product teams &mdash; open a card for details</span>
+            <div class="sm-projects-container container grid">
+                <div class="sm-project-card">
+                    <div>
+                        <i class="uil uil-server-network sm-projects-icon"></i>
+                        <h3 class="sm-projects-title">One Intuit Notification Platform (OINP)</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link sm-projects-view">
+                        View more
+                        <i class="uil uil-arrow-right sm-button-icon"></i>
+                    </span>
+                    <div class="sm-projects-modal">
+                        <div class="sm-projects-modal-content">
+                            <div class="sm-projects-modal-top">
+                            <h4 class="sm-projects-modal-title">Intuit &mdash; One Intuit Notification Platform</h4>
+                            <i class="uil uil-times sm-projects-modal-close"></i>
+                            </div>
+                            <ul class="sm-projects-modal-list grid">
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>Notification and messaging capabilities for Intuit&rsquo;s ecosystem: design and build of Java and Spring Boot services on AWS (Lambda, EC2, SQS, SNS, DynamoDB, S3) with a strong focus on scale and reliability.</p>
+                                </li>
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>Event-driven processing with Apache Kafka, PostgreSQL data paths, and operational visibility with CloudWatch, Splunk, and Kubernetes, including Argo CD and container-based delivery.</p>
+                                </li>
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>End-to-end ownership: implementation, design collaboration, code review, and production support in the notification domain.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-project-card">
+                    <div>
+                        <i class="uil uil-clipboard-alt sm-projects-icon"></i>
+                        <h3 class="sm-projects-title">Oracle Health (Cerner) <br> healthcare platforms</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link sm-projects-view">
+                        View more
+                        <i class="uil uil-arrow-right sm-button-icon"></i>
+                    </span>
+                    <div class="sm-projects-modal">
+                        <div class="sm-projects-modal-content">
+                            <div class="sm-projects-modal-top">
+                            <h4 class="sm-projects-modal-title">Oracle &mdash; healthcare and product engineering</h4>
+                            <i class="uil uil-times sm-projects-modal-close"></i>
+                            </div>
+                            <ul class="sm-projects-modal-list grid">
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>Long-running work in Oracle&rsquo;s health line (including Cerner): Java services, <strong>CCL</strong> in the clinical and operations stack, and microservices on <strong>AWS</strong> with Oracle SQL, EC2, and CloudWatch.</p>
+                                </li>
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>Release and operations: <strong>Jenkins</strong> pipelines, on-call and incident response with <strong>Splunk</strong>, and close collaboration in Agile and Scrum with clinical and product stakeholders.</p>
+                                </li>
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>Progression across multiple roles (Software Engineer through Software Developer 2) on overlapping product releases, with a focus on correctness, performance, and safe upgrades in a regulated space.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-project-card">
+                    <div>
+                        <i class="uil uil-building sm-projects-icon"></i>
+                        <h3 class="sm-projects-title">National Informatics Centre <br> public-sector systems</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link sm-projects-view">
+                        View more
+                        <i class="uil uil-arrow-right sm-button-icon"></i>
+                    </span>
+                    <div class="sm-projects-modal">
+                        <div class="sm-projects-modal-content">
+                            <div class="sm-projects-modal-top">
+                            <h4 class="sm-projects-modal-title">National Informatics Centre (MeitY) &mdash; e&#8209;government</h4>
+                            <i class="uil uil-times sm-projects-modal-close"></i>
+                            </div>
+                            <ul class="sm-projects-modal-list grid">
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p><strong>Java</strong> and <strong>Spring Boot</strong> microservices with <strong>PostgreSQL</strong> for public-sector systems with the National Informatics Centre, including requirements and sign-off cycles typical of government programs.</p>
+                                </li>
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>APIs and back-office flows for citizen-facing and administrative use cases, with an emphasis on stability and clear handover documentation for operations.</p>
+                                </li>
+                                <li class="sm-projects-modal-item">
+                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
+                                    <p>NIC (Feb 2019 &ndash; Nov 2019), Kolkata; preceded by junior-level work at Icode Solution (Jan 2018 &ndash; Jan 2019) in a similar market.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="sm-showcase section" id="portfolio">
+            <h2 class="sm-section-title">Weekend projects</h2>
+            <span class="sm-section-subtitle">Side projects and experiments</span>
+
+            <div class="sm-portfolio-container container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="sm-showcase-item grid swiper-slide">
+                        <img src="./assets/images/projects1.jpg" alt="Cloud Trails &mdash; self-hosted cloud" class="sm-portfolio-img">
+                        <div class="sm-portfolio-data">
+                            <h3 class="sm-portfolio-title">Cloud Trails</h3>
+                            <p class="sm-portfolio-description">Nextcloud on Docker, Linux, RAID, and rsync &mdash; a private, self-managed cloud in the Trails lab.</p>
+                            <a href="https://github.com/me-soumen" target="_blank" rel="noopener noreferrer" class="button button--flex button--small sm-portfolio-button">
+                                GitHub
+                                <i class="uil uil-arrow-right sm-button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sm-showcase-item grid swiper-slide">
+                        <img src="./assets/images/projects2.jpg" alt="CAS PDF parser" class="sm-portfolio-img">
+                        <div class="sm-portfolio-data">
+                            <h3 class="sm-portfolio-title">CAS PDF parser</h3>
+                            <p class="sm-portfolio-description">Spring Boot: parse account statements, extract transactions, group by fund, and compute returns.</p>
+                            <a href="https://github.com/me-soumen" target="_blank" rel="noopener noreferrer" class="button button--flex button--small sm-portfolio-button">
+                                GitHub
+                                <i class="uil uil-arrow-right sm-button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sm-showcase-item grid swiper-slide">
+                        <img src="./assets/images/projects3.jpg" alt="Backend services" class="sm-portfolio-img">
+                        <div class="sm-portfolio-data">
+                            <h3 class="sm-portfolio-title">Backend microservices</h3>
+                            <p class="sm-portfolio-description">High-throughput Java and Spring services, PostgreSQL, REST, concurrency, and tuning for realistic load.</p>
+                            <a href="https://github.com/me-soumen" target="_blank" rel="noopener noreferrer" class="button button--flex button--small sm-portfolio-button">
+                                GitHub
+                                <i class="uil uil-arrow-right sm-button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <!--==================== HIRING ====================-->
+        <section class="sm-hiring section">
+            <div class="sm-hiring-bg">
+                <div class="sm-hiring-container container grid">
+                    <div class="sm-hiring-content">
+                        <h2 class="sm-hiring-title">Hiring a backend engineer?</h2>
+                        <p class="sm-hiring-text">I am open to strong backend and platform roles, architecture discussion, and serious conversations about distributed systems and reliability.</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact me
+                            <i class="uil uil-message sm-button-icon"></i>
+                        </a>
+                    </div>
+                    <img src="./assets/images/portfolio.png" alt="Open to roles" class="sm-hiring-img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== HIGHLIGHTS ====================-->
+        <section class="sm-achievements section" id="achievements">
+            <h2 class="sm-section-title">Highlights</h2>
+            <span class="sm-section-subtitle">Recognition, outcomes, and how I work with teams</span>
+
+            <div class="sm-achievements-slider container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="sm-achievements-slide swiper-slide">
+                        <div class="sm-achievements-meta">
+                            <div class="sm-achievements-head">
+                                <i class="uil uil-brain sm-achievements-icon" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="sm-achievements-name">Excellence &mdash; Claude Code, skills, faster delivery</h3>
+                                    <span class="sm-achievements-where">Intuit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sm-achievements-text">Recognized for excellence by a Senior Staff Software Engineer and a Senior Manager for championing adoption of Claude Code and for building a comprehensive set of reusable Claude skills. That helped us land the work in about 1 week versus a 4-week estimate&mdash;without trading away review depth or quality.</p>
+                    </div>
+                    <div class="sm-achievements-slide swiper-slide">
+                        <div class="sm-achievements-meta">
+                            <div class="sm-achievements-head">
+                                <i class="uil uil-user-check sm-achievements-icon" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="sm-achievements-name">Full-time offer after long-term contract</h3>
+                                    <span class="sm-achievements-where">Intuit</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sm-achievements-text">Started on the client side through a vendor as a contractor. After a 2-year engagement, Intuit extended a full-time offer based on delivery quality and how I worked with the team in production.</p>
+                    </div>
+                    <div class="sm-achievements-slide swiper-slide">
+                        <div class="sm-achievements-meta">
+                            <div class="sm-achievements-head">
+                                <i class="uil uil-briefcase-alt sm-achievements-icon" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="sm-achievements-name">Contractor to FTE in 5 months</h3>
+                                    <span class="sm-achievements-where">Oracle Cerner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sm-achievements-text">Joined in a contract capacity with Oracle Cerner. Strong execution in the role led to a full-time offer within 5 months, continuing with the same client and product area.</p>
+                    </div>
+                    <div class="sm-achievements-slide swiper-slide">
+                        <div class="sm-achievements-meta">
+                            <div class="sm-achievements-head">
+                                <i class="uil uil-award sm-achievements-icon" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="sm-achievements-name">&ldquo;Coach of the Quarter&rdquo; &mdash; team award</h3>
+                                    <span class="sm-achievements-where">Oracle Cerner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sm-achievements-text">Received this business-unit award for a strong quarter, including clear ownership in resolving a production incident and keeping stakeholders aligned on impact and next steps. I also led training and knowledge-transfer (KT) for new joiners and supported them in ramping up on the stack, processes, and how we deliver.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination sm-achievements-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="sm-contact section" id="contact">
+            <h2 class="sm-section-title">Contact me</h2>
+            <span class="sm-section-subtitle">Ways to reach out</span>
+
+            <div class="sm-contact-container container grid">
+                <div>
+                    <div class="sm-contact-information">
+                        <i class="uil uil-envelope sm-contact-icon"></i>
+                        <div>
+                            <h3 class="sm-contact-title">Email</h3>
+                            <span class="sm-contact-subtitle"><a href="mailto:me.soumen02@gmail.com">me.soumen02@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div class="sm-contact-information">
+                        <i class="uil uil-at sm-contact-icon"></i>
+                        <div>
+                            <h3 class="sm-contact-title">Alternate</h3>
+                            <span class="sm-contact-subtitle"><a href="mailto:soumen@trails.click">soumen@trails.click</a></span>
+                        </div>
+                    </div>
+                    <div class="sm-contact-information">
+                        <i class="uil uil-globe sm-contact-icon"></i>
+                        <div>
+                            <h3 class="sm-contact-title">Website</h3>
+                            <span class="sm-contact-subtitle"><a href="https://trails.click" target="_blank" rel="noopener noreferrer">Trails Labs [trails.click]</a></span>
+                        </div>
+                    </div>
+                    <div class="sm-contact-information">
+                        <i class="uil uil-github-alt sm-contact-icon"></i>
+                        <div>
+                            <h3 class="sm-contact-title">GitHub</h3>
+                            <span class="sm-contact-subtitle"><a href="https://github.com/me-soumen" target="_blank" rel="noopener noreferrer">/me-soumen</a></span>
+                        </div>
+                    </div>
+                    <div class="sm-contact-information">
+                        <i class="uil uil-linkedin-alt sm-contact-icon"></i>
+                        <div>
+                            <h3 class="sm-contact-title">LinkedIn</h3>
+                            <span class="sm-contact-subtitle"><a href="https://www.linkedin.com/in/mukherjee-soumen" target="_blank" rel="noopener noreferrer">/mukherjee-soumen</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-contact-form grid">
+                    <p class="sm-about-description" style="margin-bottom: 1rem;">For the quickest response, please use email. I welcome inquiries about opportunities, collaboration, and technical discussion, and I aim to reply within a few business days.</p>
+                    <a href="mailto:me.soumen02@gmail.com?subject=Professional%20inquiry%20via%20portfolio%20" class="button button--flex">
+                        Send email
+                        <i class="uil uil-message sm-button-icon"></i>
+                    </a>
+                    <a href="./assets/files/Resume_Soumen_Mukherjee.pdf" download="Resume_Soumen_Mukherjee_Backend_Engineer.pdf" class="button button--flex" style="margin-top: 0.75rem;">
+                        Download resume
+                        <i class="uil uil-download-alt sm-button-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="sm-footer">
+        <div class="sm-footer-bg">
+            <div class="sm-footer-container container grid">
+                <div>
+                    <h1 class="sm-footer-title">Soumen Mukherjee</h1>
+                    <span class="sm-footer-subtitle">Software engineer (Java, Spring Boot, AWS)</span>
+                </div>
+                <ul class="sm-footer-links">
+                    <li><a href="#profile" class="sm-footer-link">About</a></li>
+                    <li><a href="#tech-stack" class="sm-footer-link">Skills</a></li>
+                    <li><a href="#journey" class="sm-footer-link">Qualification</a></li>
+                </ul>
+                <div class="sm-footer-socials">
+                    <a href="https://github.com/me-soumen" aria-label="GitHub" target="_blank" rel="noopener noreferrer"
+                        class="sm-footer-social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mukherjee-soumen" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
+                        class="sm-footer-social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://trails.click" aria-label="trails.click" target="_blank" rel="noopener noreferrer" class="sm-footer-social">
+                        <i class="uil uil-globe"></i>
+                    </a>
+                    <a href="mailto:me.soumen02@gmail.com" aria-label="Email" class="sm-footer-social">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="sm-footer-note">&#169; Soumen Mukherjee · All Rights Reserved · <a href="https://trails.click" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Trails Labs</a></p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" aria-label="scroll-up" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up sm-scrollup-icon"></i>
+    </a>
+
+    <!--==================== SITE CONTENT (edit assets/data/site-content.js) ====================-->
+    <script src="./assets/data/site-content.js?v=8" defer></script>
+    <script src="./assets/js/content-loader.js?v=9" defer></script>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./assets/js/swiper-bundle.min.js?v=4" defer></script>
+
+    <!--==================== MAIN JS (after content) ====================-->
+    <script src="./assets/js/main.js?v=7" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 2.75rem;
+        --h1-font-size: 2.0625rem;
+        --h2-font-size: 1.375rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: 0.9375rem;
+        --small-font-size: 0.8125rem;
+        --smaller-font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Room for home indicator + fixed bar stays above browser chrome on iOS */
+    .header {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    body {
+        margin: 0 0 calc(var(--header-height) + env(safe-area-inset-bottom, 0px)) 0;
+    }
+
+    .show-scroll {
+        bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+    }
+
+    .sm-nav-menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        padding-bottom: calc(4rem + env(safe-area-inset-bottom, 0px));
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+    }
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .sm-nav-menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .sm-nav-list {
+        column-gap: 0;
+    }
+
+    .sm-home-content {
+        grid-template-columns: 0.25fr 3fr;
+    }
+
+    .sm-home-blob {
+        width: 180px;
+    }
+
+    .sm-techstack-title {
+        font-size: var(--normal-font-size);
+    }
+
+    .sm-qualification-data {
+        gap: 0.5rem;
+    }
+
+    .sm-projects-container {
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .sm-project-card {
+        padding: 3.5rem 0.9rem 1.25rem;
+    }
+
+    .sm-projects-modal {
+        padding: 0 0.5rem;
+    }
+
+    .sm-hiring-img {
+        width: 200px;
+    }
+
+    .sm-achievements-meta,
+    .sm-achievements-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sm-achievements-img,
+    .sm-achievements-icon {
+        margin-right: 0;
+        margin-bottom: var(--mb-0-25);
+    }
+
+    .sm-achievements-meta,
+    .sm-achievements-text {
+        text-align: center;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+    .sm-home-content {
+        grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .sm-home-data {
+        grid-column: initial;
+    }
+
+    .sm-home-img {
+        order: 1;
+        justify-self: center;
+    }
+
+    .sm-about-container,
+    .sm-techstack-container,
+    .sm-showcase-item,
+    .sm-hiring-container,
+    .sm-contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sm-qualification-sections {
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 6rem 0 2rem;
+    }
+
+    .sm-section-subtitle {
+        margin-bottom: 4rem;
+    }
+
+    .header {
+        top: 0;
+        bottom: initial;
+        overflow: visible;
+    }
+
+    .header,
+    .main,
+    .sm-footer-container {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem + 0.75rem);
+        padding: 0.375rem 0;
+        box-sizing: border-box;
+        column-gap: 1rem;
+        overflow: visible;
+    }
+
+    .sm-nav-link {
+        line-height: 1.45;
+    }
+
+    .sm-nav-logo {
+        line-height: 1.3;
+    }
+
+    .sm-nav-icon,
+    .sm-nav-close,
+    .sm-nav-toggle {
+        display: none;
+    }
+
+    .sm-nav-list {
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .sm-nav-menu {
+        margin-left: auto;
+    }
+
+    .change-theme {
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .sm-hero-wrap {
+        row-gap: 5rem;
+    }
+
+    .sm-home-content {
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+
+    .sm-home-blob {
+        width: 270px;
+    }
+
+    .sm-home-title {
+        white-space: nowrap;
+    }
+
+    .sm-home-tagline {
+        white-space: nowrap;
+    }
+
+    .sm-home-scroll {
+        display: block;
+    }
+
+    .sm-home-scroll-button {
+        margin-left: 3rem;
+    }
+
+    .sm-about-container {
+        column-gap: 5rem;
+    }
+
+    .sm-about-img {
+        width: 350px;
+    }
+
+    .sm-about-description {
+        text-align: initial;
+    }
+
+    .sm-about-info {
+        justify-content: space-between;
+    }
+
+    .sm-about-buttons {
+        justify-content: initial;
+    }
+
+    .sm-qualification-tabs {
+        justify-content: center;
+    }
+
+    .sm-journey-tab {
+        margin: 0 var(--mb-1);
+    }
+
+    .sm-projects-icon {
+        font-size: 2rem;
+    }
+
+    .sm-project-card {
+        padding: 3.5rem 1.5rem 2rem;
+    }
+
+    .sm-projects-modal-content {
+        width: min(100%, 450px);
+    }
+
+    .sm-portfolio-img {
+        width: 320px;
+    }
+
+    .sm-showcase-item {
+        align-items: center;
+    }
+
+    .sm-hiring {
+        text-align: initial;
+    }
+
+    .sm-hiring-bg {
+        background: none;
+    }
+
+    .sm-hiring-container {
+        background-color: var(--first-color-second);
+        border-radius: 1rem;
+        padding: 0 0 0 2rem;
+        grid-template-columns: 1fr max-content;
+        column-gap: 3rem;
+    }
+
+    .sm-hiring-content {
+        padding-top: 0.8rem;
+    }
+
+    .sm-hiring-img {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .sm-footer-container {
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.5fr) auto;
+        align-items: start;
+        column-gap: 1.5rem;
+    }
+
+    .sm-footer-container > div:first-of-type {
+        min-width: 0;
+    }
+
+    .sm-footer-title {
+        white-space: nowrap;
+        max-width: 100%;
+        font-size: clamp(1.0625rem, 0.7rem + 0.9vw, var(--h1-font-size));
+    }
+
+    .sm-footer-bg {
+        padding: 3rem 0 3.5rem;
+    }
+
+    .sm-footer-links {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 1.25rem;
+        justify-content: center;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .sm-footer-socials {
+        justify-content: flex-end;
+    }
+
+    .sm-footer-note {
+        margin-top: 4.5rem;
+    }
+}
+
+/* For large devices */
+
+@media screen and (min-width: 1024px) {
+
+    .header,
+    .main,
+    .sm-footer-container {
+        padding: 0;
+    }
+
+    .sm-home-blob {
+        width: 320px;
+    }
+
+    .sm-home-social {
+        transform: translateX(-6rem);
+    }
+
+    .sm-projects-container {
+        grid-template-columns: repeat(3, 238px);
+    }
+
+    .sm-showcase-item {
+        column-gap: 5rem;
+    }
+
+    .swiper-portfolio-icon {
+        font-size: 3.5rem;
+    }
+
+    .swiper-button-prev {
+        left: -3.5rem;
+    }
+
+    .swiper-button-next {
+        right: -3.5rem;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: -4.5rem;
+    }
+
+    #achievements .sm-achievements-pagination.swiper-pagination-horizontal,
+    #achievements .swiper-pagination.sm-achievements-pagination {
+        bottom: 0 !important;
+    }
+
+    .sm-contact-form {
+        width: 460px;
+    }
+
+    .sm-contact-inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE DEVICES  */
+@media (min-width:320px) and (max-width:480px) {
+    .sm-home-content {
+        padding-top: 0px;
+    }
+
+    .sm-home-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sm-footer-note {
+        margin-right: 20px;
+    }
+}
+
+/* TABLET DEVICES  */
+@media (min-width:481px) and (max-width:768px) {
+    .sm-home-content {
+        padding-top: 0px;
+    }
+
+    .sm-home-img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* LAPTOP DEVICES  */
+@media (min-width:769px) and (max-width:1023px) {
+    .sm-home-content {
+        padding-top: 0px;
+    }
+}
+
+/* Mobile / small tablet: hero = centered image, row of social icons under image, then text */
+@media screen and (max-width: 767px) {
+    .sm-home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sm-home-img {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sm-home-social {
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.25rem;
+        row-gap: 0.5rem;
+        margin-top: 1.25rem;
+    }
+
+    .sm-home-data {
+        order: 3;
+        grid-column: auto;
+        width: 100%;
+        max-width: 32rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sm-home-data .button {
+        justify-content: center;
+    }
+
+    .sm-home-intro {
+        max-width: 100%;
+    }
+
+    .sm-home-tagline {
+        border-left: none;
+        border-top: 2px solid var(--first-color);
+        padding: 0.75rem 0.5rem 0;
+        text-align: center;
+        background: transparent;
+    }
+
+    /* Hiring section: image rounded on top only (stacked layout) */
+    .sm-hiring-img {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    /* Footer: one column, nav links left-stacked, socials one centered row */
+    .sm-footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sm-footer-container > div:first-of-type,
+    .sm-footer-container .sm-footer-socials,
+    .sm-footer-container .sm-footer-links {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .sm-footer-links {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .sm-footer-socials {
+        justify-content: center;
+        width: 100%;
+    }
+}
