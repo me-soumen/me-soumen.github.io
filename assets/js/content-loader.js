@@ -258,33 +258,58 @@
     return h;
   }
 
-  function buildProjectsGridHtml() {
+  function buildProjectsHtml() {
     var S = C.projects;
     if (!S || !S.items || !S.items.length) return "";
-    var h = "";
+    var tabs = '<div class="sm-projects-tabs">';
+    var panels = "";
     for (var i = 0; i < S.items.length; i++) {
       var it = S.items[i];
-      h += '<div class="sm-project-card"><div>';
-      h += '<i class="uil ' + it.icon + ' sm-projects-icon"></i>';
-      h += '<h3 class="sm-projects-title">' + it.titleHtml + "</h3></div>";
-      h +=
-        '<span class="button button--flex button--small button--link sm-projects-view">' +
-        S.viewMore +
-        '<i class="uil uil-arrow-right sm-button-icon"></i></span>';
-      h += '<div class="sm-projects-modal"><div class="sm-projects-modal-content">';
-      h += '<div class="sm-projects-modal-top">';
-      h += '<h4 class="sm-projects-modal-title">' + it.modalTitle + "</h4>";
-      h += '<i class="uil uil-times sm-projects-modal-close"></i></div>';
-      h += '<ul class="sm-projects-modal-list grid">';
-      for (var b = 0; b < it.lines.length; b++) {
-        h +=
-          '<li class="sm-projects-modal-item"><i class="uil uil-check-circle sm-projects-modal-icon"></i><p>' +
-          it.lines[b] +
-          "</p></li>";
+      var active = i === 0 ? " is-active" : "";
+      tabs += '<button class="sm-projects-tab' + active + '" data-project="' + i + '">';
+      if (it.tabIcon) tabs += '<i class="uil ' + it.tabIcon + '"></i>';
+      tabs += (it.tab || it.company || "Project " + (i + 1)) + "</button>";
+
+      panels += '<div class="sm-project-panel' + active + '" id="project-panel-' + i + '">';
+      panels += '<div class="sm-project-detail">';
+
+      panels += '<div class="sm-project-header">';
+      panels += '<h3 class="sm-project-title">' + (it.title || "") + "</h3>";
+      panels += '<div class="sm-project-meta">';
+      if (it.role) panels += '<span class="sm-project-meta-item"><i class="uil uil-briefcase-alt"></i>' + it.role + "</span>";
+      if (it.company) panels += '<span class="sm-project-meta-item"><i class="uil uil-building"></i>' + it.company + "</span>";
+      if (it.period) panels += '<span class="sm-project-meta-item"><i class="uil uil-calendar-alt"></i>' + it.period + "</span>";
+      panels += "</div></div>";
+
+      if (it.metrics && it.metrics.length) {
+        panels += '<div class="sm-project-metrics">';
+        for (var m = 0; m < it.metrics.length; m++) {
+          var met = it.metrics[m];
+          panels += '<div class="sm-project-metric"><span class="sm-project-metric-value">' + met.value + '</span><span class="sm-project-metric-label">' + met.label + "</span></div>";
+        }
+        panels += "</div>";
       }
-      h += "</ul></div></div></div>";
+
+      if (it.lines && it.lines.length) {
+        panels += '<ul class="sm-project-achievements">';
+        for (var b = 0; b < it.lines.length; b++) {
+          panels += '<li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>' + it.lines[b] + "</p></li>";
+        }
+        panels += "</ul>";
+      }
+
+      if (it.techTags && it.techTags.length) {
+        panels += '<div class="sm-project-tags">';
+        for (var t = 0; t < it.techTags.length; t++) {
+          panels += '<span class="sm-project-tag">' + it.techTags[t] + "</span>";
+        }
+        panels += "</div>";
+      }
+
+      panels += "</div></div>";
     }
-    return h;
+    tabs += "</div>";
+    return tabs + panels;
   }
 
   function buildWeekendProjectSlides() {
@@ -537,7 +562,7 @@
     var prSub = document.querySelector("#work .sm-section-subtitle");
     if (prSub && C.projects) prSub.textContent = C.projects.sectionSubtitle;
     var prGrid = document.querySelector("#work .sm-projects-container");
-    if (prGrid && C.projects) prGrid.innerHTML = buildProjectsGridHtml();
+    if (prGrid && C.projects) prGrid.innerHTML = buildProjectsHtml();
 
     var wkTitle = document.querySelector("#portfolio .sm-section-title");
     if (wkTitle && C.weekendProjects) wkTitle.textContent = C.weekendProjects.sectionTitle;

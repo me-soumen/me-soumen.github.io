@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Soumen Mukherjee — software engineer (Java, Spring Boot, microservices, AWS, Kafka). Experience at Intuit, Oracle (Cerner), NIC, and more. Portfolio and contact.">
     <meta name="theme-color" content="#e8f2ed">
-    <!-- Cache bust: after each deploy, replace ?v=4 with ?v=5 (etc.) in this file so all assets fetch fresh copies -->
-    <link rel="icon" href="./assets/images/favicon.png?v=4" type="image/png">
+    <!-- ASSET VERSION: 11 — bump this number and all ?v= below together on every deploy -->
+    <link rel="icon" href="./assets/images/favicon.png?v=11" type="image/png">
 
     <!-- Self-hosted fonts (avoids OTS/decode errors when IDE preview proxies break CDN font URLs) -->
-    <link rel="stylesheet" href="./assets/fonts/poppins.css?v=4">
-    <link rel="stylesheet" href="./assets/fonts/unicons-line.css?v=4">
+    <link rel="stylesheet" href="./assets/fonts/poppins.css?v=11">
+    <link rel="stylesheet" href="./assets/fonts/unicons-line.css?v=11">
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css?v=4">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css?v=11">
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/styles.css?v=9">
-    <link rel="stylesheet" href="./assets/css/responsive.css?v=10">
+    <link rel="stylesheet" href="./assets/css/styles.css?v=11">
+    <link rel="stylesheet" href="./assets/css/responsive.css?v=11">
 
     <title>Soumen Mukherjee | Software Engineer | Portfolio</title>
 </head>
@@ -502,104 +502,108 @@
             </div>
         </section>
 
-        <!--==================== PROJECTS (focus / modals) ====================-->
+        <!--==================== PROJECTS (tab + panel design) ====================-->
         <section class="sm-work section" id="work">
             <h2 class="sm-section-title">Projects</h2>
-            <span class="sm-section-subtitle">What I have delivered in product teams &mdash; open a card for details</span>
-            <div class="sm-projects-container container grid">
-                <div class="sm-project-card">
-                    <div>
-                        <i class="uil uil-server-network sm-projects-icon"></i>
-                        <h3 class="sm-projects-title">One Intuit Notification Platform (OINP)</h3>
-                    </div>
-                    <span class="button button--flex button--small button--link sm-projects-view">
-                        View more
-                        <i class="uil uil-arrow-right sm-button-icon"></i>
-                    </span>
-                    <div class="sm-projects-modal">
-                        <div class="sm-projects-modal-content">
-                            <div class="sm-projects-modal-top">
-                            <h4 class="sm-projects-modal-title">Intuit &mdash; One Intuit Notification Platform</h4>
-                            <i class="uil uil-times sm-projects-modal-close"></i>
+            <span class="sm-section-subtitle">Production systems and platforms I&rsquo;ve designed and built</span>
+            <div class="sm-projects-container container">
+                <!-- Tabs -->
+                <div class="sm-projects-tabs">
+                    <button class="sm-projects-tab is-active" data-project="0">
+                        <i class="uil uil-server-network"></i> Intuit
+                    </button>
+                    <button class="sm-projects-tab" data-project="1">
+                        <i class="uil uil-clipboard-alt"></i> Oracle Cerner
+                    </button>
+                    <button class="sm-projects-tab" data-project="2">
+                        <i class="uil uil-building"></i> NIC / Govt.
+                    </button>
+                </div>
+
+                <!-- Panel 0: Intuit -->
+                <div class="sm-project-panel is-active" id="project-panel-0">
+                    <div class="sm-project-detail">
+                        <div class="sm-project-header">
+                            <h3 class="sm-project-title">One Intuit Notification Platform (OINP)</h3>
+                            <div class="sm-project-meta">
+                                <span class="sm-project-meta-item"><i class="uil uil-briefcase-alt"></i> Lead Software Engineer</span>
+                                <span class="sm-project-meta-item"><i class="uil uil-building"></i> Intuit</span>
+                                <span class="sm-project-meta-item"><i class="uil uil-calendar-alt"></i> Apr 2024 &ndash; Apr 2026</span>
                             </div>
-                            <ul class="sm-projects-modal-list grid">
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>Notification and messaging capabilities for Intuit&rsquo;s ecosystem: design and build of Java and Spring Boot services on AWS (Lambda, EC2, SQS, SNS, DynamoDB, S3) with a strong focus on scale and reliability.</p>
-                                </li>
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>Event-driven processing with Apache Kafka, PostgreSQL data paths, and operational visibility with CloudWatch, Splunk, and Kubernetes, including Argo CD and container-based delivery.</p>
-                                </li>
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>End-to-end ownership: implementation, design collaboration, code review, and production support in the notification domain.</p>
-                                </li>
-                            </ul>
+                        </div>
+                        <div class="sm-project-metrics">
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">30</span><span class="sm-project-metric-label">locales enabled</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">7d &rarr; 30m</span><span class="sm-project-metric-label">SLA reduction</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">400 TPS</span><span class="sm-project-metric-label">peak load</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">30+</span><span class="sm-project-metric-label">security fixes</span></div>
+                        </div>
+                        <ul class="sm-project-achievements">
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Centralised, multi-channel notification platform (EMAIL, SMS, VOICE, PUSH, VOIP, TRAY) serving Intuit&rsquo;s products at scale.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Led Localisation end-to-end &mdash; 30 locales, SLA cut from 7 days to 30 minutes via async SNS/SQS, DynamoDB, and S3 with retry + DLQ + CloudWatch alerting.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Led DC Pipeline deprecation; validated new async architecture with a 400 TPS load test (TP99 ~3 s).</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Upgraded 5 services from JDK 8 to JDK 21; fixed 30+ security vulnerabilities.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Built a Claude Code skill to add 4 new channels (PUSH, ICE, BRAZE, VOIP) in 10 days vs. a 1 week/channel prior estimate.</p></li>
+                        </ul>
+                        <div class="sm-project-tags">
+                            <span class="sm-project-tag">Java</span><span class="sm-project-tag">Spring Boot</span><span class="sm-project-tag">Apache Kafka</span><span class="sm-project-tag">AWS Lambda</span><span class="sm-project-tag">SQS</span><span class="sm-project-tag">SNS</span><span class="sm-project-tag">DynamoDB</span><span class="sm-project-tag">S3</span><span class="sm-project-tag">PostgreSQL</span><span class="sm-project-tag">Docker</span><span class="sm-project-tag">Kubernetes</span><span class="sm-project-tag">Argo CD</span><span class="sm-project-tag">Splunk</span>
                         </div>
                     </div>
                 </div>
-                <div class="sm-project-card">
-                    <div>
-                        <i class="uil uil-clipboard-alt sm-projects-icon"></i>
-                        <h3 class="sm-projects-title">Oracle Health (Cerner) <br> healthcare platforms</h3>
-                    </div>
-                    <span class="button button--flex button--small button--link sm-projects-view">
-                        View more
-                        <i class="uil uil-arrow-right sm-button-icon"></i>
-                    </span>
-                    <div class="sm-projects-modal">
-                        <div class="sm-projects-modal-content">
-                            <div class="sm-projects-modal-top">
-                            <h4 class="sm-projects-modal-title">Oracle &mdash; healthcare and product engineering</h4>
-                            <i class="uil uil-times sm-projects-modal-close"></i>
+
+                <!-- Panel 1: Oracle Cerner -->
+                <div class="sm-project-panel" id="project-panel-1">
+                    <div class="sm-project-detail">
+                        <div class="sm-project-header">
+                            <h3 class="sm-project-title">Bedrock &mdash; Healthcare Reference Data Platform</h3>
+                            <div class="sm-project-meta">
+                                <span class="sm-project-meta-item"><i class="uil uil-briefcase-alt"></i> Software Developer II</span>
+                                <span class="sm-project-meta-item"><i class="uil uil-building"></i> Oracle Cerner</span>
+                                <span class="sm-project-meta-item"><i class="uil uil-calendar-alt"></i> Jun 2020 &ndash; Apr 2024</span>
                             </div>
-                            <ul class="sm-projects-modal-list grid">
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>Long-running work in Oracle&rsquo;s health line (including Cerner): Java services, <strong>CCL</strong> in the clinical and operations stack, and microservices on <strong>AWS</strong> with Oracle SQL, EC2, and CloudWatch.</p>
-                                </li>
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>Release and operations: <strong>Jenkins</strong> pipelines, on-call and incident response with <strong>Splunk</strong>, and close collaboration in Agile and Scrum with clinical and product stakeholders.</p>
-                                </li>
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>Progression across multiple roles (Software Engineer through Software Developer 2) on overlapping product releases, with a focus on correctness, performance, and safe upgrades in a regulated space.</p>
-                                </li>
-                            </ul>
+                        </div>
+                        <div class="sm-project-metrics">
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">4 sec</span><span class="sm-project-metric-label">Virtual View TP99</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">2s &rarr; ms</span><span class="sm-project-metric-label">app launch time</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">5+</span><span class="sm-project-metric-label">services owned</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">~4 yr</span><span class="sm-project-metric-label">Oracle tenure</span></div>
+                        </div>
+                        <ul class="sm-project-achievements">
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Senior Backend Engineer on Bedrock, Oracle Cerner&rsquo;s Reference Data Management platform enabling healthcare professionals to configure and access clinical reference data.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Designed and delivered Virtual View end-to-end &mdash; a new microservice for report reference data configuration, with a TP99 latency of ~4 seconds.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Optimised Bedrock application launch time via lazy loading and service refactoring, cutting cold-start from ~2 seconds to milliseconds.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Upgraded and maintained 5+ microservices on AWS (EC2, Lambda, DynamoDB) with Jenkins CI/CD and Splunk/CloudWatch observability.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Supported system design and production incident response in a regulated healthcare environment across multiple releases.</p></li>
+                        </ul>
+                        <div class="sm-project-tags">
+                            <span class="sm-project-tag">Java</span><span class="sm-project-tag">Spring Boot</span><span class="sm-project-tag">Oracle SQL</span><span class="sm-project-tag">CCL</span><span class="sm-project-tag">AWS EC2</span><span class="sm-project-tag">Lambda</span><span class="sm-project-tag">DynamoDB</span><span class="sm-project-tag">Jenkins</span><span class="sm-project-tag">CloudWatch</span><span class="sm-project-tag">Splunk</span>
                         </div>
                     </div>
                 </div>
-                <div class="sm-project-card">
-                    <div>
-                        <i class="uil uil-building sm-projects-icon"></i>
-                        <h3 class="sm-projects-title">National Informatics Centre <br> public-sector systems</h3>
-                    </div>
-                    <span class="button button--flex button--small button--link sm-projects-view">
-                        View more
-                        <i class="uil uil-arrow-right sm-button-icon"></i>
-                    </span>
-                    <div class="sm-projects-modal">
-                        <div class="sm-projects-modal-content">
-                            <div class="sm-projects-modal-top">
-                            <h4 class="sm-projects-modal-title">National Informatics Centre (MeitY) &mdash; e&#8209;government</h4>
-                            <i class="uil uil-times sm-projects-modal-close"></i>
+
+                <!-- Panel 2: NIC -->
+                <div class="sm-project-panel" id="project-panel-2">
+                    <div class="sm-project-detail">
+                        <div class="sm-project-header">
+                            <h3 class="sm-project-title">TrackChild 3.0 &mdash; National Child Tracking Platform</h3>
+                            <div class="sm-project-meta">
+                                <span class="sm-project-meta-item"><i class="uil uil-briefcase-alt"></i> Software Engineer</span>
+                                <span class="sm-project-meta-item"><i class="uil uil-building"></i> National Informatics Centre (MeitY)</span>
+                                <span class="sm-project-meta-item"><i class="uil uil-calendar-alt"></i> Feb 2019 &ndash; Nov 2019</span>
                             </div>
-                            <ul class="sm-projects-modal-list grid">
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p><strong>Java</strong> and <strong>Spring Boot</strong> microservices with <strong>PostgreSQL</strong> for public-sector systems with the National Informatics Centre, including requirements and sign-off cycles typical of government programs.</p>
-                                </li>
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>APIs and back-office flows for citizen-facing and administrative use cases, with an emphasis on stability and clear handover documentation for operations.</p>
-                                </li>
-                                <li class="sm-projects-modal-item">
-                                    <i class="uil uil-check-circle sm-projects-modal-icon"></i>
-                                    <p>NIC (Feb 2019 &ndash; Nov 2019), Kolkata; preceded by junior-level work at Icode Solution (Jan 2018 &ndash; Jan 2019) in a similar market.</p>
-                                </li>
-                            </ul>
+                        </div>
+                        <div class="sm-project-metrics">
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">National</span><span class="sm-project-metric-label">platform scale</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">2.0 &rarr; 3.0</span><span class="sm-project-metric-label">migration led</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">36</span><span class="sm-project-metric-label">state CWCs mapped</span></div>
+                            <div class="sm-project-metric"><span class="sm-project-metric-value">3</span><span class="sm-project-metric-label">modules built</span></div>
+                        </div>
+                        <ul class="sm-project-achievements">
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Led backend development and migration from TrackChild 2.0 to 3.0 &mdash; a national-scale government platform for recording missing children and matching them with orphaned children using face recognition.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Designed and implemented a Feedback Module and CWC (Child Welfare Committee) stakeholder login &mdash; mapping all CWC entities across India&rsquo;s 36 states/UTs, with dashboard design and authentication flows.</p></li>
+                            <li class="sm-project-achievement"><i class="uil uil-check-circle sm-project-achievement-icon"></i><p>Built containerised services on Docker with Jenkins CI/CD for a citizen-facing public-sector application.</p></li>
+                        </ul>
+                        <div class="sm-project-tags">
+                            <span class="sm-project-tag">Java</span><span class="sm-project-tag">Spring Boot</span><span class="sm-project-tag">PostgreSQL</span><span class="sm-project-tag">Docker</span><span class="sm-project-tag">Jenkins</span><span class="sm-project-tag">REST API</span><span class="sm-project-tag">HTML</span><span class="sm-project-tag">JavaScript</span><span class="sm-project-tag">Bootstrap</span>
                         </div>
                     </div>
                 </div>
@@ -841,14 +845,14 @@
     </a>
 
     <!--==================== SITE CONTENT (edit assets/data/site-content.js) ====================-->
-    <script src="./assets/data/site-content.js?v=8" defer></script>
-    <script src="./assets/js/content-loader.js?v=9" defer></script>
+    <script src="./assets/data/site-content.js?v=11" defer></script>
+    <script src="./assets/js/content-loader.js?v=11" defer></script>
 
     <!--==================== SWIPER JS ====================-->
-    <script src="./assets/js/swiper-bundle.min.js?v=4" defer></script>
+    <script src="./assets/js/swiper-bundle.min.js?v=11" defer></script>
 
     <!--==================== MAIN JS (after content) ====================-->
-    <script src="./assets/js/main.js?v=7" defer></script>
+    <script src="./assets/js/main.js?v=11" defer></script>
 </body>
 
 </html>

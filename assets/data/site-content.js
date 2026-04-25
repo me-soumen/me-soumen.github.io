@@ -164,43 +164,71 @@ window.SITE_CONTENT = {
 	projects: {
 		sectionTitle: "Projects",
 		sectionSubtitle: "Production systems and platforms I’ve designed and built",
-		viewMore: "View more",
 		items: [
 			{
-				icon: "uil-server-network",
-				titleHtml: "One Intuit Notification Platform (OINP)",
-				modalTitle: "Intuit — One Intuit Notification Platform",
+				tab: "Intuit",
+				tabIcon: "uil-server-network",
+				title: "One Intuit Notification Platform (OINP)",
+				company: "Intuit",
+				role: "Lead Software Engineer",
+				period: "Apr 2024 – Apr 2026",
+				metrics: [
+					{ value: "30", label: "locales enabled" },
+					{ value: "7d → 30m", label: "SLA reduction" },
+					{ value: "400 TPS", label: "peak load" },
+					{ value: "30+", label: "security fixes" }
+				],
 				lines: [
-					"Designed and built a scalable, multi-channel notification platform (Email, SMS, Push, Voice, Tray) using Java and Spring Boot, handling high-throughput event-driven workloads.",
-					"Implemented asynchronous workflows using Apache Kafka and AWS SQS/SNS, enabling reliable message delivery with retry handling, fan-out patterns, and fault tolerance.",
-					"Architected cloud-native services on AWS (Lambda, EC2, DynamoDB, S3) with strong observability using CloudWatch and Splunk, and deployed via Docker, Kubernetes, and Argo CD.",
-					"Contributed to system design, API contracts, and production reliability, ensuring high availability and performance at scale.",
-					"<strong>Tech Stack: Java, Spring Boot, Kafka, AWS (SQS, SNS, Lambda, DynamoDB, S3), PostgreSQL, Docker, Kubernetes, Splunk, CloudWatch</strong>"
-				]
+					"Contributed as Backend Engineer on the revamped One Intuit Notification Platform — a centralised, multi-channel delivery engine for Intuit’s products supporting EMAIL, SMS, VOICE, PUSH, VOIP, and TRAY notifications.",
+					"Led Localisation end-to-end (POC → design → deployment): enabled template translation into 30 locales via an async AWS SNS/SQS architecture with a new microservice calling the Global Content Service API. Reduced SLA from 7 days (manual) to ~30 minutes. Translated assets persisted to S3, state tracked in DynamoDB; failures handled via 3-attempt retry + DLQ with CloudWatch alerting.",
+					"Led end-to-end deprecation of the DC (Braze Campaign) Pipeline — re-routing notification flow off a legacy Kafka chain, coordinating per-environment rollout with the DC Pipeline team, and validating the new async architecture with a 400 TPS load test (TP99 ~3 s).",
+					"Upgraded 5 microservices from JDK 8 to JDK 21, improving security posture and enabling modern runtime features across the platform.",
+					"Built a Claude Code skill to automate new-channel onboarding (authoring through delivery). Used it alongside MCP integrations to ship 4 channels — PUSH, ICE, BRAZE, VOIP — to pre-prod in 10 days, against a prior estimate of 1 week per channel.",
+					"Identified and remediated 30+ security vulnerabilities by upgrading platform dependencies and hardening authentication mechanisms across services."
+				],
+				techTags: ["Java", "Spring Boot", "Apache Kafka", "AWS Lambda", "EC2", "SQS", "SNS", "DynamoDB", "S3", "PostgreSQL", "Docker", "Kubernetes", "Argo CD", "CloudWatch", "Splunk"]
 			},
 			{
-				icon: "uil-clipboard-alt",
-				titleHtml: "Bedrock - Healthcare Platform (Oracle Cerner)",
-				modalTitle: "Oracle Cerner — Bedrock Platform",
+				tab: "Oracle Cerner",
+				tabIcon: "uil-clipboard-alt",
+				title: "Bedrock — Healthcare Reference Data Platform",
+				company: "Oracle Cerner",
+				role: "Software Developer II",
+				period: "Jun 2020 – Apr 2024",
+				metrics: [
+					{ value: "4 sec", label: "Virtual View TP99" },
+					{ value: "2s → ms", label: "app launch time" },
+					{ value: "5+", label: "services owned" },
+					{ value: "~4 yr", label: "Oracle tenure" }
+				],
 				lines: [
-					"Developed core backend services for healthcare reference data management using Java, Spring Boot, and Oracle SQL in a highly regulated environment.",
-					"Optimized system performance through query tuning and service refactoring, improving response times and reliability of critical healthcare workflows.",
-					"Built and maintained microservices on AWS (EC2, Lambda, DynamoDB) with CI/CD pipelines using Jenkins and monitoring via Splunk and CloudWatch.",
-					"Collaborated on system design and production support, ensuring stability, correctness, and safe deployments across releases.",
-					"<strong>Tech Stack: Java, Spring Boot, Oracle SQL, AWS (EC2, Lambda, DynamoDB), Jenkins, Splunk, CloudWatch</strong>"
-				]
+					"Contributed as Senior Backend Engineer on Bedrock, Oracle Cerner’s Reference Data Management platform enabling healthcare professionals to configure and access clinical reference data.",
+					"Designed and delivered Virtual View end-to-end — a new microservice for report reference data configuration used by healthcare professionals to download clinical reports, with a TP99 latency of ~4 seconds.",
+					"Optimised the Bedrock application launch time through lazy loading and service refactoring, cutting cold-start time from ~2 seconds to milliseconds.",
+					"Upgraded, deployed, and maintained 5+ microservices on AWS (EC2, Lambda, DynamoDB) with Jenkins CI/CD pipelines and observability via Splunk and CloudWatch.",
+					"Supported system design and production incident response, maintaining stability and correctness for a regulated healthcare platform across multiple releases."
+				],
+				techTags: ["Java", "Spring Boot", "Oracle SQL", "CCL", "AWS EC2", "Lambda", "DynamoDB", "Jenkins", "CloudWatch", "Splunk", "Microservices"]
 			},
 			{
-				icon: "uil-building",
-				titleHtml: "TrackChild 3.0 (Government of India)",
-				modalTitle: "TrackChild 3.0 — National Informatics Centre (NIC)",
+				tab: "NIC / Govt.",
+				tabIcon: "uil-building",
+				title: "TrackChild 3.0 — National Child Tracking Platform",
+				company: "National Informatics Centre (MeitY)",
+				role: "Software Engineer",
+				period: "Feb 2019 – Nov 2019",
+				metrics: [
+					{ value: "National", label: "platform scale" },
+					{ value: "2.0 → 3.0", label: "migration led" },
+					{ value: "36", label: "state CWCs mapped" },
+					{ value: "3", label: "modules built" }
+				],
 				lines: [
-					"Led backend development and system migration for a government-scale application using Java, Spring Boot, and PostgreSQL.",
-					"Designed REST APIs and optimized database queries, significantly improving system performance and response times.",
-					"Built containerized services using Docker and Kubernetes with CI/CD pipelines, ensuring scalable and maintainable deployments.",
-					"Delivered stable and reliable backend workflows for citizen-facing and administrative use cases in a public-sector environment.",
-					"<strong>Tech Stack: Java, Spring Boot, PostgreSQL, HTML, JavaScript, CSS, BootStrap, Docker, Jenkins</strong>"
-				]
+					"Led backend development and system migration from TrackChild 2.0 to 3.0 — a national-scale government platform for recording missing children and matching them with orphaned children using face recognition, built on Java, Spring Boot, and PostgreSQL.",
+					"Designed and implemented a Feedback Module (REST APIs for user suggestions) and a CWC (Child Welfare Committee) stakeholder login — including mapping of all CWC entities across India’s 36 states/UTs, dashboard design, and authentication flows.",
+					"Built containerised services using Docker with Jenkins CI/CD pipelines, ensuring scalable and maintainable deployments for a citizen-facing public-sector application."
+				],
+				techTags: ["Java", "Spring Boot", "PostgreSQL", "Docker", "Jenkins", "REST API", "HTML", "JavaScript", "CSS", "Bootstrap"]
 			}
 		]
 	},

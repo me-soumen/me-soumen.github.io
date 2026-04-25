@@ -71,17 +71,17 @@
         gap: 0.5rem;
     }
 
-    .sm-projects-container {
-        grid-template-columns: max-content;
-        justify-content: center;
+    .sm-project-metrics {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .sm-project-card {
-        padding: 3.5rem 0.9rem 1.25rem;
+    .sm-project-detail {
+        padding: 1.25rem;
     }
 
-    .sm-projects-modal {
-        padding: 0 0.5rem;
+    .sm-projects-tab {
+        font-size: var(--smaller-font-size);
+        padding: 0.5rem 0.9rem;
     }
 
     .sm-hiring-img {
@@ -262,16 +262,8 @@
         margin: 0 var(--mb-1);
     }
 
-    .sm-projects-icon {
-        font-size: 2rem;
-    }
-
-    .sm-project-card {
-        padding: 3.5rem 1.5rem 2rem;
-    }
-
-    .sm-projects-modal-content {
-        width: min(100%, 450px);
+    .sm-project-detail {
+        padding: 2.25rem;
     }
 
     .sm-portfolio-img {
@@ -362,8 +354,8 @@
         transform: translateX(-6rem);
     }
 
-    .sm-projects-container {
-        grid-template-columns: repeat(3, 238px);
+    .sm-project-detail {
+        padding: 2.5rem;
     }
 
     .sm-showcase-item {

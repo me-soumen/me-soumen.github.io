@@ -65,41 +65,17 @@ smJourneyTabs.forEach((tab) => {
     });
 });
 
-/* #work card modals */
-const smProjectModals = document.querySelectorAll(".sm-projects-modal"),
-    smProjectModalBtns = document.querySelectorAll(".sm-projects-view"),
-    smProjectModalCloses = document.querySelectorAll(".sm-projects-modal-close");
+/* #work project tabs */
+const smProjectTabs = document.querySelectorAll(".sm-projects-tab");
+const smProjectPanels = document.querySelectorAll(".sm-project-panel");
 
-function smCloseAllProjectModals() {
-    smProjectModals.forEach((modalView) => {
-        modalView.classList.remove("active-modal");
-    });
-    document.body.classList.remove("sm-modal-open");
-}
-
-let smOpenProjectModal = function (modalClick) {
-    smCloseAllProjectModals();
-    smProjectModals[modalClick].classList.add("active-modal");
-    document.body.classList.add("sm-modal-open");
-};
-
-smProjectModalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener("click", () => {
-        smOpenProjectModal(i);
-    });
-});
-
-smProjectModalCloses.forEach((modalClose) => {
-    modalClose.addEventListener("click", () => {
-        smCloseAllProjectModals();
-    });
-});
-
-smProjectModals.forEach((modalView) => {
-    modalView.addEventListener("click", (e) => {
-        if (e.target === modalView) {
-            smCloseAllProjectModals();
-        }
+smProjectTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        smProjectTabs.forEach((t) => t.classList.remove("is-active"));
+        smProjectPanels.forEach((p) => p.classList.remove("is-active"));
+        tab.classList.add("is-active");
+        const panel = document.getElementById("project-panel-" + tab.dataset.project);
+        if (panel) panel.classList.add("is-active");
     });
 });
 
