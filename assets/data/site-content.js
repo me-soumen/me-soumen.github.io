@@ -246,8 +246,8 @@ window.SITE_CONTENT = {
 			},
 			{
 				image: "./assets/images/projects3.jpg",
-				imageAlt: "Money Trails",
-				title: "Money Trails - Personal Finance Tracking",
+				imageAlt: "Money Trails - Personal Finance Tracking",
+				title: "Money Trails",
 				description: "Self-hosted personal finance tracker — logs savings from asset class and track them with CAS sync facilities. Built and running on personal infrastructure for full data ownership.",
 				projectButton: "Open",
 				linkUrl: "https://money.trails.click"

@@ -42,12 +42,12 @@ Runs at page load before `main.js`. Reads `window.SITE_CONTENT`, builds HTML str
 All assets in `index.html` share a single global version number. The canonical version lives in this comment at the top of `<head>`:
 
 ```html
-<!-- ASSET VERSION: 14 — bump this number and all ?v= below together on every deploy -->
+<!-- ASSET VERSION: 1 — bump this number and all ?v= below together on every deploy -->
 ```
 
 **On every deploy that touches any asset:** find-replace the current `?v=N` with `?v=N+1` across the entire `index.html` in one operation (all 10 occurrences move together). This is the single place to manage versions.
 
-Current version: **14**
+Current version: **1**
 
 Cloudflare and mobile browsers cache aggressively — skipping the bump means visitors see stale assets.
 
