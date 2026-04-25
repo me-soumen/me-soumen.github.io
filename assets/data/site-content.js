@@ -254,8 +254,8 @@ window.SITE_CONTENT = {
 			},
 			{
 				image: "./assets/images/projects1.jpg",
-				imageAlt: "Vault Trails — self-hosted password manager",
-				title: "Vault Trails",
+				imageAlt: "Trails Vault — self-hosted password manager",
+				title: "Trails Vault",
 				description: "Self-hosted Vaultwarden instance for the family — private, end-to-end encrypted credential storage running entirely on personal infrastructure with no third-party cloud.",
 				projectButton: "Open",
 				linkUrl: "https://vault.trails.click"
