@@ -237,18 +237,10 @@ window.SITE_CONTENT = {
 		sectionSubtitle: "Side projects and experiments",
 		projects: [
 			{
-				image: "./assets/images/projects1.jpg",
-				imageAlt: "Cloud Trails — self-hosted cloud",
-				title: "Cloud Trails",
-				description: "Nextcloud on Docker, Linux, RAID, and rsync — a private, self-managed cloud in the Trails lab.",
-				projectButton: "Open",
-				linkUrl: "https://trails.click"
-			},
-			{
 				image: "./assets/images/projects2.jpg",
 				imageAlt: "CAS PDF parser",
 				title: "CAS PDF parser",
-				description: "Spring Boot: send Consolidated Account Statement (CAS) to an email, parse statements, extract transactions, group by fund, and compute returns.",
+				description: "send Consolidated Account Statement (CAS) to an email, parse statements, extract transactions, group by fund, and compute returns.",
 				projectButton: "GitHub",
 				linkUrl: "https://github.com/me-soumen"
 			},
@@ -256,9 +248,33 @@ window.SITE_CONTENT = {
 				image: "./assets/images/projects3.jpg",
 				imageAlt: "Money Trails",
 				title: "Money Trails - Personal Finance Tracking",
-				description: "High-throughput Java and Spring services, PostgreSQL, REST, concurrency, and tuning for realistic load.",
+				description: "Self-hosted personal finance tracker — logs savings from asset class and track them with CAS sync facilities. Built and running on personal infrastructure for full data ownership.",
 				projectButton: "Open",
 				linkUrl: "https://money.trails.click"
+			},
+			{
+				image: "./assets/images/projects1.jpg",
+				imageAlt: "Vault Trails — self-hosted password manager",
+				title: "Vault Trails",
+				description: "Self-hosted Vaultwarden instance for the family — private, end-to-end encrypted credential storage running entirely on personal infrastructure with no third-party cloud.",
+				projectButton: "Open",
+				linkUrl: "https://vault.trails.click"
+			},
+			{
+				image: "./assets/images/projects2.jpg",
+				imageAlt: "Soil Trails — soil sample tracker",
+				title: "Soil Trails",
+				description: "Hobby project to log and track soil samples — records location, date, and metadata for each sample. Built as a lightweight field documentation tool.",
+				projectButton: "Open",
+				linkUrl: "https://soil.trails.click"
+			},
+			{
+				image: "./assets/images/projects3.jpg",
+				imageAlt: "Play Trails — personal play time tracker",
+				title: "Play Trails",
+				description: "Personal tracker for leisure and hobby time — logs activities, visualises how free time is spent, and helps build a habit of intentional play.",
+				projectButton: "Open",
+				linkUrl: "https://play.trails.click"
 			}
 		]
 	},
