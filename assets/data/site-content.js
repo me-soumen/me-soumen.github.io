@@ -70,73 +70,73 @@ window.SITE_CONTENT = {
 		{
 			open: true,
 			icon: "uil-brackets-curly",
-			title: "Backend & Distributed Systems",
-			subtitle: "Core backend engineering and service architecture",
+			title: "Languages & Backend",
+			subtitle: "Core languages, frameworks, and backend engineering",
 			skills: [
-				{ name: "Java", percent: 90 },
-				{ name: "Spring Boot", percent: 90 },
-				{ name: "Microservices Architecture", percent: 95 },
-				{ name: "REST API Design", percent: 90 }
+				{ name: "Java 21", percent: 85 },
+				{ name: "Spring Boot & Microservices", percent: 90 },
+				{ name: "REST API & System Design", percent: 85 },
+				{ name: "JavaScript & React.js", percent: 65 }
 			]
 		},
 		{
 			open: false,
 			icon: "uil-cloud",
-			title: "Cloud, DevOps & Observability",
-			subtitle: "Infrastructure, deployment, and monitoring",
+			title: "Cloud & Infrastructure",
+			subtitle: "AWS managed services and cloud-native architecture",
 			skills: [
-				{ name: "AWS (Lambda, S3, DynamoDB, EC2)", percent: 85 },
-				{ name: "Docker & Kubernetes", percent: 80 },
-				{ name: "CI/CD (Jenkins, Argo CD)", percent: 85 },
-				{ name: "CloudWatch, Splunk, Grafana", percent: 85 }
+				{ name: "AWS Lambda & Serverless", percent: 80 },
+				{ name: "AWS DynamoDB & S3", percent: 90 },
+				{ name: "AWS EC2 & CloudWatch", percent: 90 },
+				{ name: "Cloud-Native Architecture", percent: 85 }
 			]
 		},
 		{
 			open: false,
 			icon: "uil-exchange",
-			title: "Event-Driven Architecture",
+			title: "Messaging & Event-Driven",
 			subtitle: "Asynchronous systems and messaging patterns",
 			skills: [
-				{ name: "Apache Kafka", percent: 80 },
-				{ name: "AWS SQS & SNS", percent: 85 },
+				{ name: "Apache Kafka", percent: 85 },
+				{ name: "AWS SQS & SNS", percent: 90 },
 				{ name: "Async Workflows & Pub-Sub", percent: 90 },
-				{ name: "Retry, DLQ & Idempotency", percent: 80 }
+				{ name: "Retry Patterns, DLQ & Idempotency", percent: 85 }
 			]
 		},
 		{
 			open: false,
 			icon: "uil-database",
 			title: "Data & Storage",
-			subtitle: "Database design and data modeling",
+			subtitle: "Database design, modeling, and caching",
 			skills: [
-				{ name: "PostgreSQL, MySQL, Oracle", percent: 85 },
-				{ name: "DynamoDB", percent: 85 },
-				{ name: "JPA / Hibernate", percent: 90 },
-				{ name: "Redis", percent: 80 }
+				{ name: "PostgreSQL, Oracle SQL & MySQL", percent: 90 },
+				{ name: "AWS DynamoDB", percent: 90 },
+				{ name: "Redis (Caching)", percent: 80 },
+				{ name: "JPA / Hibernate", percent: 90 }
+			]
+		},
+		{
+			open: false,
+			icon: "uil-setting",
+			title: "DevOps, Testing & Observability",
+			subtitle: "Deployment pipelines, test automation, and monitoring",
+			skills: [
+				{ name: "Docker & Kubernetes", percent: 80 },
+				{ name: "CI/CD (Jenkins, Argo CD)", percent: 90 },
+				{ name: "Splunk & Grafana", percent: 95 },
+				{ name: "Testing (JUnit, Mockito, Karate)", percent: 85 }
 			]
 		},
 		{
 			open: false,
 			icon: "uil-robot",
 			title: "AI-Assisted Development",
-			subtitle: "LLM-driven workflows and productivity engineering",
+			subtitle: "LLM-driven workflows and agentic engineering",
 			skills: [
-				{ name: "Claude Skills Development", percent: 95 },
+				{ name: "Claude Skills & Agentic AI", percent: 95 },
 				{ name: "Claude API Workflows", percent: 80 },
 				{ name: "Model Context Protocol (MCP)", percent: 75 },
 				{ name: "Cursor (AI-assisted coding)", percent: 90 }
-			]
-		},
-		{
-			open: false,
-			icon: "uil-window",
-			title: "Frontend (Basic)",
-			subtitle: "UI development and integration",
-			skills: [
-				{ name: "HTML", percent: 85 },
-				{ name: "JavaScript", percent: 75 },
-				{ name: "CSS", percent: 75 },
-				{ name: "React.js", percent: 65 }
 			]
 		}
 	],
