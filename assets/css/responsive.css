@@ -37,6 +37,15 @@
         border-radius: 1.5rem 1.5rem 0 0;
         transition: 0.3s;
     }
+
+    /* Projects accordion: tighter padding + 2x2 metrics */
+    .sm-project-detail {
+        padding: 1.25rem;
+    }
+
+    .sm-project-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /*==================== MEDIA QUERIES ====================*/
@@ -69,19 +78,6 @@
 
     .sm-qualification-data {
         gap: 0.5rem;
-    }
-
-    .sm-project-metrics {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .sm-project-detail {
-        padding: 1.25rem;
-    }
-
-    .sm-projects-tab {
-        font-size: var(--smaller-font-size);
-        padding: 0.5rem 0.9rem;
     }
 
     .sm-hiring-img {

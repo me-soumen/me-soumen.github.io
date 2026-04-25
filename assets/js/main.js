@@ -65,17 +65,19 @@ smJourneyTabs.forEach((tab) => {
     });
 });
 
-/* #work project tabs */
-const smProjectTabs = document.querySelectorAll(".sm-projects-tab");
-const smProjectPanels = document.querySelectorAll(".sm-project-panel");
-
-smProjectTabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-        smProjectTabs.forEach((t) => t.classList.remove("is-active"));
-        smProjectPanels.forEach((p) => p.classList.remove("is-active"));
-        tab.classList.add("is-active");
-        const panel = document.getElementById("project-panel-" + tab.dataset.project);
-        if (panel) panel.classList.add("is-active");
+/* #work projects accordion */
+document.querySelectorAll(".sm-projects-header").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        const item = btn.closest(".sm-projects-item");
+        const isOpen = item.classList.contains("is-open");
+        document.querySelectorAll(".sm-projects-item").forEach(function (el) {
+            el.classList.remove("is-open");
+            el.querySelector(".sm-projects-header").setAttribute("aria-expanded", "false");
+        });
+        if (!isOpen) {
+            item.classList.add("is-open");
+            btn.setAttribute("aria-expanded", "true");
+        }
     });
 });
 

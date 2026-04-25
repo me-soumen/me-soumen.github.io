@@ -166,7 +166,7 @@ window.SITE_CONTENT = {
 		sectionSubtitle: "Production systems and platforms I’ve designed and built",
 		items: [
 			{
-				tab: "Intuit",
+				tab: "Intuit - One Intuit Notification Platform",
 				tabIcon: "uil-server-network",
 				title: "One Intuit Notification Platform (OINP)",
 				company: "Intuit",
@@ -189,7 +189,7 @@ window.SITE_CONTENT = {
 				techTags: ["Java", "Spring Boot", "Apache Kafka", "AWS Lambda", "EC2", "SQS", "SNS", "DynamoDB", "S3", "PostgreSQL", "Docker", "Kubernetes", "Argo CD", "CloudWatch", "Splunk"]
 			},
 			{
-				tab: "Oracle Cerner",
+				tab: "Oracle Cerner - Bedrock",
 				tabIcon: "uil-clipboard-alt",
 				title: "Bedrock — Healthcare Reference Data Platform",
 				company: "Oracle Cerner",
@@ -211,7 +211,7 @@ window.SITE_CONTENT = {
 				techTags: ["Java", "Spring Boot", "Oracle SQL", "CCL", "AWS EC2", "Lambda", "DynamoDB", "Jenkins", "CloudWatch", "Splunk", "Microservices"]
 			},
 			{
-				tab: "NIC / Govt.",
+				tab: "NIC (GoI MeitY) - TrackChild 3.0",
 				tabIcon: "uil-building",
 				title: "TrackChild 3.0 — National Child Tracking Platform",
 				company: "National Informatics Centre (MeitY)",
