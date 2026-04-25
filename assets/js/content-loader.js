@@ -230,7 +230,7 @@
   }
 
   function buildSkillsHtml() {
-    var groups = C.skillGroups;
+    var groups = C.techStackGroups;
     var h = "";
     for (var g = 0; g < groups.length; g++) {
       var G = groups[g];
@@ -511,13 +511,13 @@
     }
 
     var skTitle = document.querySelector("#tech-stack .sm-section-title");
-    if (skTitle) skTitle.textContent = C.skills.sectionTitle;
+    if (skTitle) skTitle.textContent = C.techStack.sectionTitle;
     var skSub = document.querySelector("#tech-stack .sm-section-subtitle");
-    if (skSub) skSub.textContent = C.skills.sectionSubtitle;
+    if (skSub) skSub.textContent = C.techStack.sectionSubtitle;
     var skCont = document.querySelector(".sm-techstack-container");
     if (skCont) skCont.innerHTML = buildSkillsHtml();
 
-    var Q = C.qualification;
+    var Q = C.journey;
     var qSec = document.querySelector(".sm-journey .sm-section-title");
     if (qSec) qSec.textContent = Q.sectionTitle;
     var qSub = document.querySelector(".sm-journey .sm-section-subtitle");

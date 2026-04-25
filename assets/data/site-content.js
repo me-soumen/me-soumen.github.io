@@ -2,10 +2,10 @@
  * Site content: `assets/js/content-loader.js` reads this object into the page.
  * Images: `assets/images/` (and `assets/files/` for the resume).
  *
- * Keys: theme, meta, header, nav, files, hero, about, skills, skillGroups, qualification,
+ * Keys: theme, meta, header, nav, files, hero, about, techStack, techStackGroups, journey,
  * projects (#work work cards), weekendProjects (#portfolio), hiring, highlights,
  * contact, footer. Optional: links (merges with contact for missing contact fields);
- * highlights may be under achievements; qualification may use workTab / educationTab.
+ * journey may use workTab / educationTab.
  */
 window.SITE_CONTENT = {
 	theme: {
@@ -62,11 +62,11 @@ window.SITE_CONTENT = {
 		],
 		resumeButton: "Download resume"
 	},
-	skills: {
+	techStack: {
 		sectionTitle: "Technology stack",
 		sectionSubtitle: "My technical skills"
 	},
-	skillGroups: [
+	techStackGroups: [
 		{
 			open: true,
 			icon: "uil-brackets-curly",
@@ -140,7 +140,7 @@ window.SITE_CONTENT = {
 			]
 		}
 	],
-	qualification: {
+	journey: {
 		sectionTitle: "Qualification",
 		sectionSubtitle: "Experience and education",
 		tabs: [
