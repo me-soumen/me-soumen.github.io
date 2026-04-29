@@ -152,8 +152,8 @@ window.SITE_CONTENT = {
 			{ title: "Lead Software Engineer", company: "Dexian India Technologies Pvt. Ltd.", client:"Intuit", location: "Bengaluru, India", from: "17/04/2024", to: "22/04/2026", techStack: "Java, Spring Boot, AWS, Kafka, Microservices, Lambda, EC2, SQS, SNS, DynamoDB, S3, CloudWatch, PostgreSQL, Docker, Kubernetes, Argo CD, Splunk" },
 			{ title: "Software Developer II", company: "Oracle Cerner Healthcare Solutions India Pvt. Ltd.", client:"", location: "Bengaluru, India", from: "22/06/2020", to: "12/04/2024", techStack: "Java, CCL, AWS, Spring Boot, Microservices, Oracle SQL, EC2, Cloudwatch, Jenkins, Splunk" },
 			{ title: "Software Engineer", company: "Allegis Services India Pvt. Ltd (TEKsystems)", client: "Oracle Cerner", location: "Bengaluru, India", from: "20/01/2020", to: "19/06/2020", techStack: "Java, CCL, AWS, Spring Boot, Microservices, Oracle SQL, EC2, Cloudwatch, Jenkins, Splunk" },
-			{ title: "Software Engineer", company: "Southern Phone Company Limited", client: "", from: "17/01/2020", location: "Bengaluru, India", to: "17/01/2020", techStack: "Java, Spring Boot, Microservices, MySQL, Jenkins, Splunk" },
-			{ title: "Software Engineer", company: "Velocis Systems Pvt. Ltd.", client: "National Informatics Centre (NIC)", location: "Kolkata, India", from: "17/01/2020", to: "17/01/2020", techStack: "Java, Spring Boot, Microservices, PostgreSQL" },
+			{ title: "Software Engineer", company: "Southern Phone Company Limited", client: "", from: "02/12/2019", location: "Bengaluru, India", to: "17/01/2020", techStack: "Java, Spring Boot, Microservices, MySQL, Jenkins, Splunk" },
+			{ title: "Software Engineer", company: "Velocis Systems Pvt. Ltd.", client: "National Informatics Centre (NIC)", location: "Kolkata, India", from: "01/02/2019", to: "29/11/2019", techStack: "Java, Spring Boot, Microservices, PostgreSQL" },
 			{ title: "Junior Software Developer (Freelance)", company: "Icode Solutions", client: "", location: "Kolkata, India", from: "02/01/2018", to: "31/01/2019", techStack: "Java, Spring Boot, Microservices, MySQL" },
 		],
 		education: [
