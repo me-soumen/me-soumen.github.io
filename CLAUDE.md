@@ -47,7 +47,7 @@ All assets in `index.html` share a single global version number. The canonical v
 
 **On every deploy that touches any asset:** find-replace the current `?v=N` with `?v=N+1` across the entire `index.html` in one operation (all 10 occurrences move together). This is the single place to manage versions.
 
-Current version: **1**
+Current version: **2**
 
 Cloudflare and mobile browsers cache aggressively — skipping the bump means visitors see stale assets.
 

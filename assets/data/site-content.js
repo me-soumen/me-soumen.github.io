@@ -19,7 +19,7 @@ window.SITE_CONTENT = {
 	},
 	meta: {
 		title: "Soumen Mukherjee | Software Engineer | Portfolio",
-		description: "Soumen Mukherjee — software engineer (Java, Spring Boot, microservices, AWS, Kafka). Experience at Intuit, Oracle (Cerner), NIC, and more. Portfolio and contact."
+		description: "Soumen Mukherjee — software engineer (Java, Spring Boot, microservices, AWS, Kafka). Experience at Booking.com, Intuit, Oracle (Cerner), NIC, and more. Portfolio and contact."
 	},
 	header: {
 		brand: "Soumen Mukherjee"
@@ -54,10 +54,10 @@ window.SITE_CONTENT = {
 		sectionSubtitle: "A short introduction",
 		image: "./assets/images/about.png",
 		imageAlt: "About Soumen",
-		bodyHtml: "Software engineer with <strong>over seven years</strong> of experience in <strong>Java</strong> and <strong>Spring Boot</strong>, shipping APIs, data-heavy services, and distributed systems in product teams. I work across the stack with <strong>REST</strong> and <strong>event-driven</strong> design (<strong>Kafka</strong>); databases such as <strong>PostgreSQL</strong>, <strong>Oracle</strong>, <strong>MySQL</strong>, and <strong>DynamoDB</strong>; and cloud and delivery on <strong>AWS</strong> with <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>CI/CD</strong>. I care about clear design, safe releases, and how systems behave in production. Outside of work, I run self-hosted infra (Nextcloud, Money Trails, Soil Trails, NAS, etc.) in the <strong>Trails Labs</strong> ecosystem.",
+		bodyHtml: "Software engineer with <strong>over eight years</strong> of experience in <strong>Java</strong> and <strong>Spring Boot</strong>, shipping APIs, data-heavy services, and distributed systems in product teams. I work across the stack with <strong>REST</strong> and <strong>event-driven</strong> design (<strong>Kafka</strong>); databases such as <strong>PostgreSQL</strong>, <strong>Oracle</strong>, <strong>MySQL</strong>, and <strong>DynamoDB</strong>; and cloud and delivery on <strong>AWS</strong> with <strong>Docker</strong>, <strong>Kubernetes</strong>, and <strong>CI/CD</strong>. I care about clear design, safe releases, and how systems behave in production. Outside of work, I run self-hosted infra (Nextcloud, Money Trails, Soil Trails, NAS, etc.) in the <strong>Trails Labs</strong> ecosystem.",
 		stats: [
-			{ value: "7+", labelLine1: "Years of experience", labelLine2: "" },
-			{ value: "6", labelLine1: "Companies", labelLine2: "" },
+			{ value: "8+", labelLine1: "Years of experience", labelLine2: "" },
+			{ value: "7", labelLine1: "Companies", labelLine2: "" },
 			{ value: "4+", labelLine1: "Side projects", labelLine2: "" }
 		],
 		resumeButton: "Download resume"
@@ -122,8 +122,9 @@ window.SITE_CONTENT = {
 			subtitle: "Deployment pipelines, test automation, and monitoring",
 			skills: [
 				{ name: "Docker & Kubernetes", percent: 80 },
-				{ name: "CI/CD (Jenkins, Argo CD)", percent: 90 },
-				{ name: "Splunk & Grafana", percent: 95 },
+				{ name: "CI/CD (Jenkins, Argo CD, Harness)", percent: 90 },
+				{ name: "Splunk, Grafana & Prometheus", percent: 90 },
+				{ name: "OpenTelemetry", percent: 70 },
 				{ name: "Testing (JUnit, Mockito, Karate)", percent: 85 }
 			]
 		},
@@ -149,12 +150,13 @@ window.SITE_CONTENT = {
 		],
 		defaultTab: "work",
 		work: [
+			{ title: "Associate Technical Architect", company: "Tavant Technologies", client:"Booking.com", location: "Bengaluru, India", from: "18/05/2026", to: "", techStack: "Java 21, Spring Boot, Kafka, AWS, MySQL, Prometheus (Mimir), OpenTelemetry, Grafana, Docker, Kubernetes, Harness" },
 			{ title: "Lead Software Engineer", company: "Dexian India Technologies Pvt. Ltd.", client:"Intuit", location: "Bengaluru, India", from: "17/04/2024", to: "22/04/2026", techStack: "Java, Spring Boot, AWS, Kafka, Microservices, Lambda, EC2, SQS, SNS, DynamoDB, S3, CloudWatch, PostgreSQL, Docker, Kubernetes, Argo CD, Splunk" },
 			{ title: "Software Developer II", company: "Oracle Cerner Healthcare Solutions India Pvt. Ltd.", client:"", location: "Bengaluru, India", from: "22/06/2020", to: "12/04/2024", techStack: "Java, CCL, AWS, Spring Boot, Microservices, Oracle SQL, EC2, Cloudwatch, Jenkins, Splunk" },
 			{ title: "Software Engineer", company: "Allegis Services India Pvt. Ltd (TEKsystems)", client: "Oracle Cerner", location: "Bengaluru, India", from: "20/01/2020", to: "19/06/2020", techStack: "Java, CCL, AWS, Spring Boot, Microservices, Oracle SQL, EC2, Cloudwatch, Jenkins, Splunk" },
 			{ title: "Software Engineer", company: "Southern Phone Company Limited", client: "", from: "02/12/2019", location: "Bengaluru, India", to: "17/01/2020", techStack: "Java, Spring Boot, Microservices, MySQL, Jenkins, Splunk" },
 			{ title: "Software Engineer", company: "Velocis Systems Pvt. Ltd.", client: "National Informatics Centre (NIC)", location: "Kolkata, India", from: "01/02/2019", to: "29/11/2019", techStack: "Java, Spring Boot, Microservices, PostgreSQL" },
-			{ title: "Junior Software Developer (Freelance)", company: "Icode Solutions", client: "", location: "Kolkata, India", from: "02/01/2018", to: "31/01/2019", techStack: "Java, Spring Boot, Microservices, MySQL" },
+			{ title: "Junior Software Developer (Freelance)", company: "Icode Solutions", client: "KRE Properties (CRM Project)", location: "Kolkata, India", from: "02/01/2018", to: "31/01/2019", techStack: "Java, Spring Boot, JavaScript, jQuery, CSS, MySQL" },
 		],
 		education: [
 			{ title: "Master of Computer Applications (MCA)", subtitle: "Heritage Institute of Technology", location: "Kolkata, India", from: "2015", to: "2018" },
@@ -165,6 +167,27 @@ window.SITE_CONTENT = {
 		sectionTitle: "Projects",
 		sectionSubtitle: "Production systems and platforms I’ve designed and built",
 		items: [
+			{
+				tab: "Tavant - Payout Config Change Coordinator",
+				tabIcon: "uil-chart-line",
+				title: "Payout Config Change Coordinator (PC3)",
+				company: "Booking.com",
+				role: "Associate Technical Architect",
+				period: "May 2026 – Present",
+				metrics: [
+					{ value: "Graphite → Mimir", label: "metrics platform migrated" },
+					{ value: "2", label: "dashboards migrated" },
+					{ value: "37", label: "alerts migrated" }
+				],
+				lines: [
+					"Migrated production metrics for the payment-config-service (Spring Boot) from Graphite to Prometheus (Mimir), coordinating with the Prometheus platform team, and migrated all associated Grafana dashboards and alerts.",
+					"Instrumented the service with OpenTelemetry and added the corresponding Harness pipeline config, introducing calculated SLO, min, max, and average latency metrics for every API call; deployed and verified in production.",
+					"Added observability for the partner payout-method switch flow (VCC ⇄ Bank Transfer – NET/GROSS), introducing new metrics to capture downstream Bizent service call failures and “no asset payout relation found” (404) cases.",
+					"Building an integration test suite for the asset payout-method switch flow for execution in the CI pipeline (in progress).",
+					"Contributing to System Integration Testing (SIT) for BHFS Release 5.3 alongside ongoing feature work."
+				],
+				techTags: ["Java 21", "Spring Boot", "Kafka", "AWS", "MySQL", "Prometheus (Mimir)", "OpenTelemetry", "Grafana", "Docker", "Kubernetes", "Harness"]
+			},
 			{
 				tab: "Intuit - One Intuit Notification Platform",
 				tabIcon: "uil-server-network",
